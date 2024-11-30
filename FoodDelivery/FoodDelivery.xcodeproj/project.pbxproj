@@ -10,7 +10,7 @@
 		554687C92CFB5C8B00FE724D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554687C82CFB5C8B00FE724D /* AppDelegate.swift */; };
 		554687CB2CFB5C8B00FE724D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554687CA2CFB5C8B00FE724D /* SceneDelegate.swift */; };
 		554687CD2CFB5C8B00FE724D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554687CC2CFB5C8B00FE724D /* ViewController.swift */; };
-		554687D22CFB5C8D00FE724D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554687D12CFB5C8D00FE724D /* Assets.xcassets */; };
+		554687D22CFB5C8D00FE724D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554687D12CFB5C8D00FE724D /* Images.xcassets */; };
 		554687D52CFB5C8D00FE724D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 554687D42CFB5C8D00FE724D /* Base */; };
 		5560F2272CFB693A00398037 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5560F2192CFB693A00398037 /* LICENSE.txt */; };
 		5560F2282CFB693A00398037 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F21A2CFB693A00398037 /* Roboto-Black.ttf */; };
@@ -25,6 +25,10 @@
 		5560F2312CFB693A00398037 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F2232CFB693A00398037 /* Roboto-Regular.ttf */; };
 		5560F2322CFB693A00398037 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F2242CFB693A00398037 /* Roboto-Thin.ttf */; };
 		5560F2332CFB693A00398037 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F2252CFB693A00398037 /* Roboto-ThinItalic.ttf */; };
+		5560F2392CFB878000398037 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5560F2382CFB878000398037 /* swiftgen.yml */; };
+		5560F23B2CFB87E800398037 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5560F23A2CFB87E800398037 /* Colors.xcassets */; };
+		5560F2462CFB9B3D00398037 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F2442CFB9B3D00398037 /* Fonts.swift */; };
+		5560F2472CFB9B3D00398037 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F2452CFB9B3D00398037 /* XCAssets+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +36,7 @@
 		554687C82CFB5C8B00FE724D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		554687CA2CFB5C8B00FE724D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		554687CC2CFB5C8B00FE724D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		554687D12CFB5C8D00FE724D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		554687D12CFB5C8D00FE724D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		554687D42CFB5C8D00FE724D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554687D62CFB5C8D00FE724D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5560F2192CFB693A00398037 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -48,6 +52,10 @@
 		5560F2232CFB693A00398037 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		5560F2242CFB693A00398037 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		5560F2252CFB693A00398037 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5560F2382CFB878000398037 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		5560F23A2CFB87E800398037 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5560F2442CFB9B3D00398037 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5560F2452CFB9B3D00398037 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +88,9 @@
 		554687C72CFB5C8B00FE724D /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
-				554687C82CFB5C8B00FE724D /* AppDelegate.swift */,
-				554687CA2CFB5C8B00FE724D /* SceneDelegate.swift */,
+				5560F2432CFB99AE00398037 /* SwiftGen */,
 				554687CC2CFB5C8B00FE724D /* ViewController.swift */,
-				554687D12CFB5C8D00FE724D /* Assets.xcassets */,
-				554687D32CFB5C8D00FE724D /* LaunchScreen.storyboard */,
-				554687D62CFB5C8D00FE724D /* Info.plist */,
+				5560F24B2CFBA04100398037 /* App */,
 				5560F2172CFB692C00398037 /* Resources */,
 			);
 			path = FoodDelivery;
@@ -94,7 +99,10 @@
 		5560F2172CFB692C00398037 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5560F23C2CFB87F100398037 /* Assets */,
 				5560F2182CFB693200398037 /* Fonts */,
+				554687D32CFB5C8D00FE724D /* LaunchScreen.storyboard */,
+				554687D62CFB5C8D00FE724D /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -127,6 +135,34 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
+		5560F23C2CFB87F100398037 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				554687D12CFB5C8D00FE724D /* Images.xcassets */,
+				5560F23A2CFB87E800398037 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5560F2432CFB99AE00398037 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				5560F2382CFB878000398037 /* swiftgen.yml */,
+				5560F2442CFB9B3D00398037 /* Fonts.swift */,
+				5560F2452CFB9B3D00398037 /* XCAssets+Generated.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		5560F24B2CFBA04100398037 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				554687CA2CFB5C8B00FE724D /* SceneDelegate.swift */,
+				554687C82CFB5C8B00FE724D /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +170,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554687D92CFB5C8D00FE724D /* Build configuration list for PBXNativeTarget "FoodDelivery" */;
 			buildPhases = (
+				5560F2372CFB868600398037 /* SwiftGen */,
+				5560F24A2CFB9E3D00398037 /* SwiftLint */,
 				554687C12CFB5C8B00FE724D /* Sources */,
 				554687C22CFB5C8B00FE724D /* Frameworks */,
 				554687C32CFB5C8B00FE724D /* Resources */,
@@ -188,7 +226,8 @@
 				5560F2332CFB693A00398037 /* Roboto-ThinItalic.ttf in Resources */,
 				5560F2322CFB693A00398037 /* Roboto-Thin.ttf in Resources */,
 				5560F2272CFB693A00398037 /* LICENSE.txt in Resources */,
-				554687D22CFB5C8D00FE724D /* Assets.xcassets in Resources */,
+				5560F2392CFB878000398037 /* swiftgen.yml in Resources */,
+				554687D22CFB5C8D00FE724D /* Images.xcassets in Resources */,
 				5560F22E2CFB693A00398037 /* Roboto-LightItalic.ttf in Resources */,
 				5560F22A2CFB693A00398037 /* Roboto-Bold.ttf in Resources */,
 				5560F2302CFB693A00398037 /* Roboto-MediumItalic.ttf in Resources */,
@@ -199,11 +238,53 @@
 				5560F22F2CFB693A00398037 /* Roboto-Medium.ttf in Resources */,
 				5560F2312CFB693A00398037 /* Roboto-Regular.ttf in Resources */,
 				5560F2282CFB693A00398037 /* Roboto-Black.ttf in Resources */,
+				5560F23B2CFB87E800398037 /* Colors.xcassets in Resources */,
 				5560F22D2CFB693A00398037 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5560F2372CFB868600398037 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftgen >/dev/null; then\n  swiftgen config run --config ${PROJECT_DIR}/FoodDelivery/SwiftGen/swiftgen.yml\nelse\n  echo \"error: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+		5560F24A2CFB9E3D00398037 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint --config .swiftlint.yml\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		554687C12CFB5C8B00FE724D /* Sources */ = {
@@ -212,6 +293,8 @@
 			files = (
 				554687CD2CFB5C8B00FE724D /* ViewController.swift in Sources */,
 				554687C92CFB5C8B00FE724D /* AppDelegate.swift in Sources */,
+				5560F2462CFB9B3D00398037 /* Fonts.swift in Sources */,
+				5560F2472CFB9B3D00398037 /* XCAssets+Generated.swift in Sources */,
 				554687CB2CFB5C8B00FE724D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +350,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -330,7 +413,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -358,7 +441,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 483R2RBHL2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodDelivery/Info.plist;
+				INFOPLIST_FILE = FoodDelivery/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -385,7 +468,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 483R2RBHL2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodDelivery/Info.plist;
+				INFOPLIST_FILE = FoodDelivery/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

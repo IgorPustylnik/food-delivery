@@ -1,0 +1,8 @@
+input_dir: ${PROJECT_DIR}/FoodDelivery/Resources/
+output_dir: ${PROJECT_DIR}/FoodDelivery/SwiftGen/
+
+fonts:
+  inputs: Fonts
+  outputs:
+    templateName: swift5
+    output: Fonts.swift
