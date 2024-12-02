@@ -9,7 +9,15 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    // MARK: - Public properties
+
     var window: UIWindow?
+
+    // MARK: - Private properties
+
+    private lazy var appCoordinator: Coordinator = AppCoordinator()
+
+    // MARK: - Configuration
 
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
@@ -19,11 +27,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         window = UIWindow(windowScene: windowScene)
         window?.windowScene = windowScene
-
-        let navigationController = UINavigationController(rootViewController: ViewController())
-
-        window?.rootViewController = navigationController
+        window?.rootViewController = UIViewController()
         window?.makeKeyAndVisible()
+
+        appCoordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
