@@ -24,7 +24,7 @@ final class FavoritesView: UIView {
     // MARK: - UI Setup
 
     private func setupUI() {
-
+        backgroundColor = .systemGreen
     }
 
 }

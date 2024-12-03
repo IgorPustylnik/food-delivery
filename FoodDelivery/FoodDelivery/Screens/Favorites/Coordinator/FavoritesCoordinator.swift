@@ -23,8 +23,8 @@ final class FavoritesCoordinator: BaseCoordinator, FavoritesCoordinatorOutput {
     }
 
     override func start() {
-        let (_, _) = FavoritesModuleConfigurator().configure()
-
+        let (view, _) = FavoritesModuleConfigurator().configure()
+        router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
     }
 
 }

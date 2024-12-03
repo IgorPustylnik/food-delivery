@@ -23,8 +23,8 @@ final class ProfileCoordinator: BaseCoordinator, ProfileCoordinatorOutput {
     }
 
     override func start() {
-        let (_, _) = ProfileModuleConfigurator().configure()
-
+        let (view, _) = ProfileModuleConfigurator().configure()
+        router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
     }
 
 }

@@ -38,10 +38,10 @@ enum MainTab: Int, CaseIterable {
         case .profile:
             return .Tabbar.profile
         }
-        return image.withTintColor(.App.tabBarGrey, renderingMode: .alwaysOriginal)
+        return image
     }
 
     var selectedImage: UIImage {
-        return image.withTintColor(.App.accentOrange, renderingMode: .alwaysOriginal)
+        return image
     }
 }

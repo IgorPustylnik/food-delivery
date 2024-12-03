@@ -94,7 +94,6 @@
 		C442EDF7713B0CC8156ACFF3 /* ProfileModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B288E6D6CBBFCEEB113A54F /* ProfileModuleConfigurator.swift */; };
 		C5BB7D26F5698028D0A392E3 /* OrderModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5FF60439234735EA8D2A7E /* OrderModuleConfigurator.swift */; };
 		C6DBA03C181C0946A5DA4D44 /* OnboardingModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BA1FA6DF62E19DFCFC93CD /* OnboardingModuleConfigurator.swift */; };
-		D4C6C434B028A31E9B563325 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B316AE3033B5AA9ECAD888 /* MainView.swift */; };
 		D60A3FFADDD5E702B12381CC /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52EF996717AE98BD218DBBE /* MainCoordinator.swift */; };
 		DDA56203BA4C44D265832EDF /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCE618FF2EB63E505BBAAF /* OrderViewController.swift */; };
 		DE885D79A23FF0FF569D1BAF /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E4D1D3C6D4790BD35987E /* AuthCoordinator.swift */; };
@@ -112,7 +111,6 @@
 /* Begin PBXFileReference section */
 		0386D396A240392A4A421879 /* FavoritesModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesModuleConfigurator.swift; sourceTree = "<group>"; };
 		0562ECB97AB81CDD7FF0D2E8 /* ProfileView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		08B316AE3033B5AA9ECAD888 /* MainView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		093263FA4A60960AB72B6B3D /* ProfileModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileModuleInput.swift; sourceTree = "<group>"; };
 		0B2828F5BCCD7AD35DAB3DDC /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		0B288E6D6CBBFCEEB113A54F /* ProfileModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileModuleConfigurator.swift; sourceTree = "<group>"; };
@@ -710,7 +708,6 @@
 			isa = PBXGroup;
 			children = (
 				8E13E85C376BDB60637B5401 /* MainViewController.swift */,
-				08B316AE3033B5AA9ECAD888 /* MainView.swift */,
 				64879B03D8E3452D3DC8B305 /* MainViewInput.swift */,
 				0B2828F5BCCD7AD35DAB3DDC /* MainViewOutput.swift */,
 			);
@@ -905,7 +902,6 @@
 				4B9C9B45762F31915E3482DE /* MainModuleInput.swift in Sources */,
 				02B769F2E6583924A9B3A185 /* MainModuleOutput.swift in Sources */,
 				5B752F4ABF6C7113951790DD /* MainViewController.swift in Sources */,
-				D4C6C434B028A31E9B563325 /* MainView.swift in Sources */,
 				FB91B9773C95E67457C4F1AB /* MainViewInput.swift in Sources */,
 				55520BBE2CFEF38D005506CE /* MainTab.swift in Sources */,
 				1A95F4EA699F97FF4AE2094A /* MainViewOutput.swift in Sources */,

@@ -23,8 +23,8 @@ final class OrderCoordinator: BaseCoordinator, OrderCoordinatorOutput {
     }
 
     override func start() {
-        let (_, _) = OrderModuleConfigurator().configure()
-
+        let (view, _) = OrderModuleConfigurator().configure()
+        router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
     }
 
 }

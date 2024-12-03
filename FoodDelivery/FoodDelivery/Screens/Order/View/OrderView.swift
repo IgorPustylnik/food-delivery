@@ -24,7 +24,7 @@ final class OrderView: UIView {
     // MARK: - UI Setup
 
     private func setupUI() {
-
+        backgroundColor = .systemBlue
     }
 
 }
