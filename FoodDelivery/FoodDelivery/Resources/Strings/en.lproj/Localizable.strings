@@ -11,3 +11,20 @@
 "TabBar.order.title"="Order";
 "TabBar.favorites.title"="Favorites";
 "TabBar.profile.title"="Profile";
+
+// MARK: - Onboarding
+// Buttons
+"Onboarding.button.next"="Next";
+"Onboarding.button.last"="Great!";
+// Page 1
+"Onboarding.page1.title"="Delicious Food";
+"Onboarding.page1.description"="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+// Page 2
+"Onboarding.page2.title"="Fast Shipping";
+"Onboarding.page2.description"="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+// Page 3
+"Onboarding.page3.title"="Highest Quality";
+"Onboarding.page3.description"="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+// Page 4
+"Onboarding.page4.title"="Pay Online";
+"Onboarding.page4.description"="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";

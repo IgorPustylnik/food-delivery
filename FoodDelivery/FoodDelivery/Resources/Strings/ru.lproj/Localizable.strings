@@ -11,3 +11,20 @@
 "TabBar.order.title"="Заказ";
 "TabBar.favorites.title"="Избранное";
 "TabBar.profile.title"="Профиль";
+
+// MARK: - Onboarding
+// Buttons
+"Onboarding.button.next"="Далее";
+"Onboarding.button.last"="Круто!";
+// Page 1
+"Onboarding.page1.title"="Вкуснейшая еда";
+"Onboarding.page1.description"="Лорем ипсум долор сит амет, консецтетуэр адиписцинг элит.";
+// Page 2
+"Onboarding.page2.title"="Быстрая доставка";
+"Onboarding.page2.description"="Лорем ипсум долор сит амет, консецтетуэр адиписцинг элит.";
+// Page 3
+"Onboarding.page3.title"="Высшее качество";
+"Onboarding.page3.description"="Лорем ипсум долор сит амет, консецтетуэр адиписцинг элит.";
+// Page 4
+"Onboarding.page4.title"="Оплата онлайн";
+"Onboarding.page4.description"="Лорем ипсум долор сит амет, консецтетуэр адиписцинг элит.";

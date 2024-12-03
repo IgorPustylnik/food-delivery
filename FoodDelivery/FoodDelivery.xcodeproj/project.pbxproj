@@ -43,6 +43,8 @@
 		55520BB62CFE2C02005506CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55520BB42CFE2C02005506CE /* Localizable.strings */; };
 		55520BB92CFE2FF8005506CE /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BB82CFE2FF8005506CE /* Strings.swift */; };
 		55520BBE2CFEF38D005506CE /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BBD2CFEF38D005506CE /* MainTab.swift */; };
+		55520BC42CFF0F60005506CE /* OnboardingPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BC32CFF0F60005506CE /* OnboardingPageModel.swift */; };
+		55520BC62CFF0F9D005506CE /* OnboardingPresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BC52CFF0F9D005506CE /* OnboardingPresenterModel.swift */; };
 		5560F2272CFB693A00398037 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5560F2192CFB693A00398037 /* LICENSE.txt */; };
 		5560F2282CFB693A00398037 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F21A2CFB693A00398037 /* Roboto-Black.ttf */; };
 		5560F2292CFB693A00398037 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F21B2CFB693A00398037 /* Roboto-BlackItalic.ttf */; };
@@ -148,6 +150,8 @@
 		55520BB72CFE2C25005506CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55520BB82CFE2FF8005506CE /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		55520BBD2CFEF38D005506CE /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		55520BC32CFF0F60005506CE /* OnboardingPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageModel.swift; sourceTree = "<group>"; };
+		55520BC52CFF0F9D005506CE /* OnboardingPresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterModel.swift; sourceTree = "<group>"; };
 		5560F2192CFB693A00398037 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5560F21A2CFB693A00398037 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		5560F21B2CFB693A00398037 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -438,6 +442,23 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		55520BC12CFF0F45005506CE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				55520BC22CFF0F51005506CE /* Model */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		55520BC22CFF0F51005506CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55520BC32CFF0F60005506CE /* OnboardingPageModel.swift */,
+				55520BC52CFF0F9D005506CE /* OnboardingPresenterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5560F2172CFB692C00398037 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,6 +560,7 @@
 		79925A73254FB370D27B7977 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				55520BC12CFF0F45005506CE /* Support */,
 				57B5BB8E8425FA01F0A1C04D /* OnboardingPresenter.swift */,
 				1A5116B67F7487D43236A85C /* OnboardingModuleInput.swift */,
 				35437397CF534EF51C03E437 /* OnboardingModuleOutput.swift */,
@@ -893,10 +915,12 @@
 				A2591CBBBEF06604F4110F6A /* AuthModuleOutput.swift in Sources */,
 				B89B2B73B50FEC5487C1DCE0 /* AuthViewController.swift in Sources */,
 				126039D51DD0EE80D7BA8562 /* AuthView.swift in Sources */,
+				55520BC42CFF0F60005506CE /* OnboardingPageModel.swift in Sources */,
 				297D0311B36CD61AFC20BE30 /* AuthViewInput.swift in Sources */,
 				A52345D63FB32365812F3730 /* AuthViewOutput.swift in Sources */,
 				D60A3FFADDD5E702B12381CC /* MainCoordinator.swift in Sources */,
 				35A9ED79167D45B8ADF40CA3 /* MainCoordinatorOutput.swift in Sources */,
+				55520BC62CFF0F9D005506CE /* OnboardingPresenterModel.swift in Sources */,
 				FFF4A922F3F68A85F54FA285 /* MainModuleConfigurator.swift in Sources */,
 				0F4D67FABD2E5BA894BEE858 /* MainPresenter.swift in Sources */,
 				4B9C9B45762F31915E3482DE /* MainModuleInput.swift in Sources */,
