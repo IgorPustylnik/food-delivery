@@ -42,6 +42,7 @@
 		554687D52CFB5C8D00FE724D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 554687D42CFB5C8D00FE724D /* Base */; };
 		55520BB62CFE2C02005506CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55520BB42CFE2C02005506CE /* Localizable.strings */; };
 		55520BB92CFE2FF8005506CE /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BB82CFE2FF8005506CE /* Strings.swift */; };
+		55520BBE2CFEF38D005506CE /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BBD2CFEF38D005506CE /* MainTab.swift */; };
 		5560F2272CFB693A00398037 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5560F2192CFB693A00398037 /* LICENSE.txt */; };
 		5560F2282CFB693A00398037 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F21A2CFB693A00398037 /* Roboto-Black.ttf */; };
 		5560F2292CFB693A00398037 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F21B2CFB693A00398037 /* Roboto-BlackItalic.ttf */; };
@@ -148,6 +149,7 @@
 		55520BB52CFE2C02005506CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55520BB72CFE2C25005506CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55520BB82CFE2FF8005506CE /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		55520BBD2CFEF38D005506CE /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
 		5560F2192CFB693A00398037 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5560F21A2CFB693A00398037 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		5560F21B2CFB693A00398037 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -232,7 +234,6 @@
 				BA3206B919EB0232DB6D9A79 /* FavoritesViewInput.swift */,
 				A02BA59B31E14919E63949E6 /* FavoritesViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -244,7 +245,6 @@
 				BAE3523401125B24DF16AD00 /* OrderViewInput.swift */,
 				6E675F8BE39EBEF2F93DD0FB /* OrderViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -253,7 +253,6 @@
 			children = (
 				0386D396A240392A4A421879 /* FavoritesModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -265,7 +264,6 @@
 				90DA4F8C78B8FDFA11B3A7DD /* Presenter */,
 				00A382E4AFFB8BE27444B91C /* View */,
 			);
-			name = Favorites;
 			path = Favorites;
 			sourceTree = "<group>";
 		};
@@ -277,7 +275,6 @@
 				76DB7990144D6720DD44D9DB /* Presenter */,
 				2A7C8B1F1A01088E0609EF2F /* View */,
 			);
-			name = Auth;
 			path = Auth;
 			sourceTree = "<group>";
 		};
@@ -287,7 +284,6 @@
 				2B324FE5B93044989C7D622E /* HomeCoordinator.swift */,
 				C430C2E57A0FB11F135AD408 /* HomeCoordinatorOutput.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -296,7 +292,6 @@
 			children = (
 				0E8436FBC74F7E02349CEDC2 /* AuthModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -308,7 +303,6 @@
 				E019D48C78DFF53417F99000 /* AuthViewInput.swift */,
 				DABCC90FBD83AF5335673151 /* AuthViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -319,7 +313,6 @@
 				69A44EBEDD82ECDDB417AB66 /* OrderModuleInput.swift */,
 				6BC138D2CF0066DCD050F7BC /* OrderModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -331,7 +324,6 @@
 				2E0A6798CCFDD85EE87A58A5 /* Presenter */,
 				04AC103374EA751C617ABE27 /* View */,
 			);
-			name = Order;
 			path = Order;
 			sourceTree = "<group>";
 		};
@@ -341,7 +333,6 @@
 				5ADD1D19701B78D9F821BF74 /* ProfileCoordinator.swift */,
 				9E515DF66DD3949E81D9FC1B /* ProfileCoordinatorOutput.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -365,7 +356,6 @@
 				9A139FE310605265E657994A /* OrderCoordinator.swift */,
 				557E23E22141B9BEAC63E73B /* OrderCoordinatorOutput.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -442,6 +432,14 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
+		55520BBC2CFEF381005506CE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				55520BBD2CFEF38D005506CE /* MainTab.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		5560F2172CFB692C00398037 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,7 +514,6 @@
 			children = (
 				0B288E6D6CBBFCEEB113A54F /* ProfileModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -527,7 +524,6 @@
 				4B87D5678036F80929DAF5FF /* AuthModuleInput.swift */,
 				89FEDA4D395D19772BD909B9 /* AuthModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -539,7 +535,6 @@
 				19887E327642ABF3C3F29A84 /* ProfileViewInput.swift */,
 				9462145A449C352C10902440 /* ProfileViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -559,7 +554,6 @@
 				E52EF996717AE98BD218DBBE /* MainCoordinator.swift */,
 				518DC68BE3848AC4AE9F0D7A /* MainCoordinatorOutput.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -570,7 +564,6 @@
 				14B1E2EC7CA71F7F330AEF4B /* FavoritesModuleInput.swift */,
 				E4720D28BBD25E2AB75CB186 /* FavoritesModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -580,7 +573,6 @@
 				440016A6D4675DA3F9E78E3B /* FavoritesCoordinator.swift */,
 				0BFBC3F8ACC0E3DD01CE739A /* FavoritesCoordinatorOutput.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -603,18 +595,17 @@
 				E5382E9D2EF614740D3116D9 /* HomeViewInput.swift */,
 				588FC39855EC87E95748A6E6 /* HomeViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
 		A0C82F614DA7B6031B6BF5EA /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				55520BBC2CFEF381005506CE /* Support */,
 				A031B74FB2076B1AF00C4115 /* MainPresenter.swift */,
 				72A5A8B0BB37B58A54318FAA /* MainModuleInput.swift */,
 				0B9DCD148FC99ADD8B1B380C /* MainModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -634,7 +625,6 @@
 				2A89E9A5DE70C8923A889D84 /* HomeModuleInput.swift */,
 				65633C70D5D368EB68B8FCFA /* HomeModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -643,7 +633,6 @@
 			children = (
 				11E77F4F788260604AE1C8CF /* MainModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -655,7 +644,6 @@
 				A88DAB22E70A2F2254899F08 /* Presenter */,
 				9F02BCD89897BE9006C9DED7 /* View */,
 			);
-			name = Home;
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -667,7 +655,6 @@
 				CAEE1512207504F00B5C28FE /* Presenter */,
 				7727F938E9534A2D2F7B271E /* View */,
 			);
-			name = Profile;
 			path = Profile;
 			sourceTree = "<group>";
 		};
@@ -676,7 +663,6 @@
 			children = (
 				BA5FF60439234735EA8D2A7E /* OrderModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -687,7 +673,6 @@
 				093263FA4A60960AB72B6B3D /* ProfileModuleInput.swift */,
 				F2A46221954AFC771D3FF9D7 /* ProfileModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -710,7 +695,6 @@
 				A0C82F614DA7B6031B6BF5EA /* Presenter */,
 				EF1CF4862685DB28FDFE1B6B /* View */,
 			);
-			name = Main;
 			path = Main;
 			sourceTree = "<group>";
 		};
@@ -730,7 +714,6 @@
 				64879B03D8E3452D3DC8B305 /* MainViewInput.swift */,
 				0B2828F5BCCD7AD35DAB3DDC /* MainViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -739,7 +722,6 @@
 			children = (
 				68360E6361C452F2D36163E4 /* HomeModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -749,7 +731,6 @@
 				9A7E4D1D3C6D4790BD35987E /* AuthCoordinator.swift */,
 				652CE686435D85A7584840C0 /* AuthCoordinatorOutput.swift */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -926,6 +907,7 @@
 				5B752F4ABF6C7113951790DD /* MainViewController.swift in Sources */,
 				D4C6C434B028A31E9B563325 /* MainView.swift in Sources */,
 				FB91B9773C95E67457C4F1AB /* MainViewInput.swift in Sources */,
+				55520BBE2CFEF38D005506CE /* MainTab.swift in Sources */,
 				1A95F4EA699F97FF4AE2094A /* MainViewOutput.swift in Sources */,
 				B0402117AC830CD82051DCDC /* HomeCoordinator.swift in Sources */,
 				997947B31987188887808A3D /* HomeCoordinatorOutput.swift in Sources */,

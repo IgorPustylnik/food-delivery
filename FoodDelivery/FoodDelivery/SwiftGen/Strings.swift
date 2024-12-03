@@ -10,6 +10,27 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum TabBar {
+    internal enum Favorites {
+      /// Favorites
+      internal static let title = L10n.tr("Localizable", "TabBar.favorites.title", fallback: "Favorites")
+    }
+    internal enum Home {
+      /// Localizable.strings
+      ///   FoodDelivery
+      /// 
+      ///   Created by Игорь Пустыльник on 02.12.2024.
+      internal static let title = L10n.tr("Localizable", "TabBar.home.title", fallback: "Home")
+    }
+    internal enum Order {
+      /// Order
+      internal static let title = L10n.tr("Localizable", "TabBar.order.title", fallback: "Order")
+    }
+    internal enum Profile {
+      /// Profile
+      internal static let title = L10n.tr("Localizable", "TabBar.profile.title", fallback: "Profile")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

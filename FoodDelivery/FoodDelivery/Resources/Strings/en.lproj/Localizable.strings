@@ -5,3 +5,9 @@
   Created by Игорь Пустыльник on 02.12.2024.
   
 */
+
+// MARK: - TabBar
+"TabBar.home.title"="Home";
+"TabBar.order.title"="Order";
+"TabBar.favorites.title"="Favorites";
+"TabBar.profile.title"="Profile";
