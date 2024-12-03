@@ -38,14 +38,14 @@ class BaseCoordinator: Coordinator {
         }
     }
 
-    func removeAllChilds() {
+    func removeAllChildren() {
         guard
             !childCoordinators.isEmpty
             else { return }
 
         for coordinator in childCoordinators {
             if let coordinator = coordinator as? BaseCoordinator {
-                coordinator.removeAllChilds()
+                coordinator.removeAllChildren()
             }
         }
 

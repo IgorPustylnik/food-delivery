@@ -11,5 +11,5 @@ protocol Coordinator: AnyObject {
     /// Notifies coordinator that it can start itself
     func start()
     /// Notifies coordinator that is should remove all child coordinators
-    func removeAllChilds()
+    func removeAllChildren()
 }
