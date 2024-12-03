@@ -36,7 +36,7 @@ final class AppCoordinator: BaseCoordinator {
     // MARK: - Private Properties
 
     private var instructor: LaunchInstructor {
-        // TODO: - get user state
+        // TODO: get user state
         return .configure(userState: .loggedIn)
     }
 
@@ -84,7 +84,7 @@ private extension AppCoordinator {
     func runMainFlow() {
         let router = MainRouter()
         let coordinator = MainCoordinator(router: router)
-        coordinator.finishFlow = { [weak self] in
+        coordinator.onLogout = { [weak self] in
             self?.start()
             self?.removeDependency(coordinator)
         }

@@ -10,6 +10,11 @@ final class MainPresenter: MainModuleOutput {
 
     // MARK: - MainModuleOutput
 
+    var selectHomeScreen: TabSelectClosure?
+    var selectOrderScreen: TabSelectClosure?
+    var selectFavoritesScreen: TabSelectClosure?
+    var selectProfileScreen: TabSelectClosure?
+
     // MARK: - Properties
 
     weak var view: MainViewInput?
@@ -25,8 +30,17 @@ extension MainPresenter: MainModuleInput {
 
 extension MainPresenter: MainViewOutput {
 
-    func viewLoaded() {
-        view?.setupInitialState()
+    func selectTab(_ tab: MainTab, isInitial: Bool) {
+        switch tab {
+        case .home:
+            selectHomeScreen?(isInitial)
+        case .order:
+            selectOrderScreen?(isInitial)
+        case .favorites:
+            selectFavoritesScreen?(isInitial)
+        case .profile:
+            selectProfileScreen?(isInitial)
+        }
     }
 
 }

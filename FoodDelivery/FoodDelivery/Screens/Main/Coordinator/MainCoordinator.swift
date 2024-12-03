@@ -12,7 +12,7 @@ final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
 
     // MARK: - MainCoordinatorOutput
 
-    var finishFlow: (() -> Void)?
+    var onLogout: (() -> Void)?
 
     // MARK: - Private Properties
 
@@ -25,8 +25,7 @@ final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
     }
 
     override func start() {
-        let (view, _) = MainModuleConfigurator().configure()
-        router.setRootModule(view)
+        showTabBar()
     }
 
 }
@@ -34,5 +33,53 @@ final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
 // MARK: - Private methods
 
 private extension MainCoordinator {
+
+    func showTabBar() {
+        let (view, output) = MainModuleConfigurator().configure()
+
+        output.selectHomeScreen = runHomeFlow
+        output.selectOrderScreen = runOrderFlow
+        output.selectFavoritesScreen = runFavoritesFlow
+        output.selectProfileScreen = runProfileFlow
+
+        router.setRootModule(view)
+        runHomeFlow(isInitial: true)
+    }
+
+    func runHomeFlow(isInitial: Bool) {
+        guard isInitial else {
+            return
+        }
+        let coordinator = HomeCoordinator(router: router)
+        addDependency(coordinator)
+        coordinator.start()
+    }
+
+    func runOrderFlow(isInitial: Bool) {
+        guard isInitial else {
+            return
+        }
+        let coordinator = OrderCoordinator(router: router)
+        addDependency(coordinator)
+        coordinator.start()
+    }
+
+    func runFavoritesFlow(isInitial: Bool) {
+        guard isInitial else {
+            return
+        }
+        let coordinator = FavoritesCoordinator(router: router)
+        addDependency(coordinator)
+        coordinator.start()
+    }
+
+    func runProfileFlow(isInitial: Bool) {
+        guard isInitial else {
+            return
+        }
+        let coordinator = ProfileCoordinator(router: router)
+        addDependency(coordinator)
+        coordinator.start()
+    }
 
 }

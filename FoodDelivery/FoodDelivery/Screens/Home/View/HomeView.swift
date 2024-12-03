@@ -24,7 +24,7 @@ final class HomeView: UIView {
     // MARK: - UI Setup
 
     private func setupUI() {
-
+        backgroundColor = .systemRed
     }
 
 }

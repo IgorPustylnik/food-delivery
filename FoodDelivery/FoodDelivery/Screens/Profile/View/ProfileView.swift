@@ -24,7 +24,7 @@ final class ProfileView: UIView {
     // MARK: - UI Setup
 
     private func setupUI() {
-
+        backgroundColor = .systemYellow
     }
 
 }

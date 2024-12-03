@@ -23,8 +23,8 @@ final class HomeCoordinator: BaseCoordinator, HomeCoordinatorOutput {
     }
 
     override func start() {
-        let (_, _) = HomeModuleConfigurator().configure()
-
+        let (view, _) = HomeModuleConfigurator().configure()
+        router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
     }
 
 }

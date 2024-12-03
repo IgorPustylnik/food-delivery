@@ -9,5 +9,5 @@
 import UIKit
 
 protocol MainCoordinatorOutput: AnyObject {
-    var finishFlow: (() -> Void)? { get set }
+    var onLogout: (() -> Void)? { get set }
 }
