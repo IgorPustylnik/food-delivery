@@ -7,6 +7,7 @@
 //
 
 protocol OnboardingViewOutput {
-    /// Notify presenter that view is ready
     func viewLoaded()
+    func nextPage()
+    func set(page index: Int)
 }

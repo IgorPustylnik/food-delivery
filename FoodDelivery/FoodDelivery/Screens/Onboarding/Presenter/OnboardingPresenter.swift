@@ -10,9 +10,28 @@ final class OnboardingPresenter: OnboardingModuleOutput {
 
     // MARK: - OnboardingModuleOutput
 
+    var onComplete: (() -> Void)?
+
     // MARK: - Properties
 
     weak var view: OnboardingViewInput?
+
+    private lazy var model: [OnboardingPageModel] = {
+        OnboardingPresenterModel.Page.allCases.map { $0.model }
+    }()
+
+    private var currentPage: Int? {
+        didSet {
+            guard let currentPage else {
+                return
+            }
+            if currentPage == model.count {
+                onComplete?()
+                return
+            }
+            view?.set(page: currentPage, buttonTitle: model[currentPage].buttonTitle)
+        }
+    }
 }
 
 // MARK: - OnboardingModuleInput
@@ -26,7 +45,21 @@ extension OnboardingPresenter: OnboardingModuleInput {
 extension OnboardingPresenter: OnboardingViewOutput {
 
     func viewLoaded() {
-        view?.setupInitialState()
+        view?.configure(with: model)
+        currentPage = 0
+    }
+
+    func nextPage() {
+        guard let currentPage = self.currentPage else {
+            return
+        }
+        if currentPage < model.count {
+            self.currentPage = currentPage + 1
+        }
+    }
+
+    func set(page index: Int) {
+        currentPage = index
     }
 
 }
