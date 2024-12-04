@@ -12,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        configureServiceLocator()
         return true
     }
 
@@ -24,6 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+    }
+
+}
+
+// MARK: Private methods
+
+private extension AppDelegate {
+
+    func configureServiceLocator() {
+        ServiceLocator.shared.register(service: UserDefaultsServiceImpl() as UserDefaultsService)
     }
 
 }
