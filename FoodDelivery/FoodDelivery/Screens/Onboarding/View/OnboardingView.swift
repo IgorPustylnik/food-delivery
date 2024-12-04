@@ -55,9 +55,6 @@ final class OnboardingView: UIView {
 
         backgroundColor = .App.accentOrange
 
-        pageControl.numberOfPages = 4
-        pageControl.set(progress: 2, animated: true)
-
         pageControl.anchorCenter(centerX: centerXAnchor)
         pageControl.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
         pageControl.heightAnchor.constraint(equalToConstant: 10).isActive = true
@@ -86,6 +83,7 @@ extension OnboardingView {
     func configure(with model: [OnboardingPageModel]) {
         adapter?.configure(with: model)
         adapter?.delegate = delegate
+        pageControl.numberOfPages = model.count
     }
 
     func set(page index: Int, buttonTitle: String) {
