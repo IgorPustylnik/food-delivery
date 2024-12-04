@@ -10,4 +10,6 @@ import UIKit
 
 protocol OnboardingCoordinatorOutput: AnyObject {
 
+    var onComplete: (() -> Void)? { get set }
+
 }

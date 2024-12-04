@@ -35,9 +35,20 @@ final class AppCoordinator: BaseCoordinator {
 
     // MARK: - Private Properties
 
+    private var userDefaultsService: UserDefaultsService?
+
     private var instructor: LaunchInstructor {
-        // TODO: get user state
-        return .configure(userState: .loggedIn)
+        if let hasCompletedOnboarding = userDefaultsService?.hasCompletedOnboarding, hasCompletedOnboarding {
+            return .configure(userState: .loggedIn)
+        }
+        return .configure(userState: .notPassedOnboarding)
+    }
+
+    // MARK: - Init
+
+    override init() {
+        super.init()
+        configureServices()
     }
 
     // MARK: - Coordinator
@@ -62,7 +73,8 @@ private extension AppCoordinator {
     func runOnboardingFlow() {
         let router = MainRouter()
         let coordinator = OnboardingCoordinator(router: router)
-        coordinator.finishFlow = { [weak self] in
+        coordinator.onComplete = { [weak self] in
+            self?.userDefaultsService?.hasCompletedOnboarding = true
             self?.start()
             self?.removeDependency(coordinator)
         }
@@ -90,6 +102,14 @@ private extension AppCoordinator {
         }
         addDependency(coordinator)
         coordinator.start()
+    }
+
+    func configureServices() {
+        let userDefaultsService: UserDefaultsService? = ServiceLocator.shared.resolve()
+        guard let userDefaultsService else {
+            return
+        }
+        self.userDefaultsService = userDefaultsService
     }
 
 }

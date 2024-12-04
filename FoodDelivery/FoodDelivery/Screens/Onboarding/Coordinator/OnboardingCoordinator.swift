@@ -12,7 +12,7 @@ final class OnboardingCoordinator: BaseCoordinator, OnboardingCoordinatorOutput 
 
     // MARK: - OnboardingCoordinatorOutput
 
-    var finishFlow: (() -> Void)?
+    var onComplete: (() -> Void)?
 
     // MARK: - Private Properties
 
@@ -26,7 +26,7 @@ final class OnboardingCoordinator: BaseCoordinator, OnboardingCoordinatorOutput 
 
     override func start() {
         let (view, output) = OnboardingModuleConfigurator().configure()
-
+        output.onComplete = onComplete
         router.setRootModule(view)
     }
 

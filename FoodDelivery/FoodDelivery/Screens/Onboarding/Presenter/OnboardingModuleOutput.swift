@@ -7,4 +7,7 @@
 //
 
 protocol OnboardingModuleOutput: AnyObject {
+
+    var onComplete: (() -> Void)? { get set }
+
 }
