@@ -7,6 +7,6 @@
 //
 
 protocol OnboardingViewInput: AnyObject {
-    /// Method for setup initial state of view
-    func setupInitialState()
+    func configure(with model: [OnboardingPageModel])
+    func set(page index: Int, buttonTitle: String)
 }

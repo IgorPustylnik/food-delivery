@@ -12,19 +12,21 @@ final class OnboardingViewController: UIViewController {
 
     // MARK: - Properties
 
-    private var onboardingView = OnboardingView()
-
     var output: OnboardingViewOutput?
+
+    // MARK: - Private properties
+
+    private var onboardingView: OnboardingView?
 
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        output?.viewLoaded()
-    }
-
-    override func loadView() {
+        onboardingView = OnboardingView()
+        onboardingView?.delegate = self
         view = onboardingView
+        loadViewIfNeeded()
+        output?.viewLoaded()
     }
 }
 
@@ -32,8 +34,30 @@ final class OnboardingViewController: UIViewController {
 
 extension OnboardingViewController: OnboardingViewInput {
 
-    func setupInitialState() {
+    func configure(with model: [OnboardingPageModel]) {
+        onboardingView?.configure(with: OnboardingPresenterModel.Page.allCases.map { $0.model })
+    }
 
+    func set(page index: Int, buttonTitle: String) {
+        onboardingView?.set(page: index, buttonTitle: buttonTitle)
+    }
+
+}
+
+// MARK: - OnboardingViewDelegate
+
+extension OnboardingViewController: OnboardingViewDelegate {
+
+    func pressedNext() {
+        output?.nextPage()
+    }
+
+    func set(page index: Int) {
+        output?.set(page: index)
+    }
+
+    func set(progress: CGFloat) {
+        onboardingView?.set(progress: progress)
     }
 
 }

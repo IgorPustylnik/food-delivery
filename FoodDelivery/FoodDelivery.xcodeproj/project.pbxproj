@@ -45,6 +45,8 @@
 		55520BBE2CFEF38D005506CE /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BBD2CFEF38D005506CE /* MainTab.swift */; };
 		55520BC42CFF0F60005506CE /* OnboardingPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BC32CFF0F60005506CE /* OnboardingPageModel.swift */; };
 		55520BC62CFF0F9D005506CE /* OnboardingPresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BC52CFF0F9D005506CE /* OnboardingPresenterModel.swift */; };
+		55520BC82CFF239C005506CE /* OnboardingViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BC72CFF239C005506CE /* OnboardingViewDelegate.swift */; };
+		55520BCE2CFF2CDB005506CE /* PageControlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55520BCD2CFF2CDB005506CE /* PageControlFactory.swift */; };
 		5560F2272CFB693A00398037 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5560F2192CFB693A00398037 /* LICENSE.txt */; };
 		5560F2282CFB693A00398037 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F21A2CFB693A00398037 /* Roboto-Black.ttf */; };
 		5560F2292CFB693A00398037 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5560F21B2CFB693A00398037 /* Roboto-BlackItalic.ttf */; };
@@ -63,6 +65,16 @@
 		5560F2462CFB9B3D00398037 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F2442CFB9B3D00398037 /* Fonts.swift */; };
 		55A0AA752CFBA5FE007593F7 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A0AA742CFBA5FE007593F7 /* BaseCoordinator.swift */; };
 		55A0AA7B2CFBA8B1007593F7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A0AA7A2CFBA8B1007593F7 /* AppCoordinator.swift */; };
+		55BCFFB72CFF338E00ED5AE2 /* CHIPageControl in Frameworks */ = {isa = PBXBuildFile; productRef = 55BCFFB62CFF338E00ED5AE2 /* CHIPageControl */; };
+		55BCFFB92CFF358C00ED5AE2 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFB82CFF358B00ED5AE2 /* ButtonFactory.swift */; };
+		55BCFFBC2CFF414900ED5AE2 /* OnboardingAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFBB2CFF414900ED5AE2 /* OnboardingAdapter.swift */; };
+		55BCFFBE2CFF415400ED5AE2 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFBD2CFF415400ED5AE2 /* OnboardingCollectionViewCell.swift */; };
+		55BCFFC22CFF481500ED5AE2 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFC12CFF481500ED5AE2 /* UIView+ext.swift */; };
+		55BCFFC52CFFA5F900ED5AE2 /* Scrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFC42CFFA5F900ED5AE2 /* Scrollable.swift */; };
+		55BCFFC82D0051E900ED5AE2 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFC72D0051E900ED5AE2 /* UserDefaultsService.swift */; };
+		55BCFFCB2D00B20400ED5AE2 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFCA2D00B20400ED5AE2 /* ServiceLocator.swift */; };
+		55BCFFCD2D00B21100ED5AE2 /* ServiceLocating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFCC2D00B21100ED5AE2 /* ServiceLocating.swift */; };
+		55BCFFD02D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFCF2D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift */; };
 		5B752F4ABF6C7113951790DD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13E85C376BDB60637B5401 /* MainViewController.swift */; };
 		5BC9340947698775206658C2 /* OnboardingModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5116B67F7487D43236A85C /* OnboardingModuleInput.swift */; };
 		68D9E951E42DFBD829DC2365 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62DC5F3C879526573747AC /* OnboardingCoordinator.swift */; };
@@ -152,6 +164,8 @@
 		55520BBD2CFEF38D005506CE /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
 		55520BC32CFF0F60005506CE /* OnboardingPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageModel.swift; sourceTree = "<group>"; };
 		55520BC52CFF0F9D005506CE /* OnboardingPresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterModel.swift; sourceTree = "<group>"; };
+		55520BC72CFF239C005506CE /* OnboardingViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewDelegate.swift; sourceTree = "<group>"; };
+		55520BCD2CFF2CDB005506CE /* PageControlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlFactory.swift; sourceTree = "<group>"; };
 		5560F2192CFB693A00398037 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5560F21A2CFB693A00398037 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		5560F21B2CFB693A00398037 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -171,6 +185,15 @@
 		557E23E22141B9BEAC63E73B /* OrderCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderCoordinatorOutput.swift; sourceTree = "<group>"; };
 		55A0AA742CFBA5FE007593F7 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		55A0AA7A2CFBA8B1007593F7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		55BCFFB82CFF358B00ED5AE2 /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		55BCFFBB2CFF414900ED5AE2 /* OnboardingAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAdapter.swift; sourceTree = "<group>"; };
+		55BCFFBD2CFF415400ED5AE2 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		55BCFFC12CFF481500ED5AE2 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
+		55BCFFC42CFFA5F900ED5AE2 /* Scrollable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrollable.swift; sourceTree = "<group>"; };
+		55BCFFC72D0051E900ED5AE2 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		55BCFFCA2D00B20400ED5AE2 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		55BCFFCC2D00B21100ED5AE2 /* ServiceLocating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocating.swift; sourceTree = "<group>"; };
+		55BCFFCF2D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceImpl.swift; sourceTree = "<group>"; };
 		57B5BB8E8425FA01F0A1C04D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		588FC39855EC87E95748A6E6 /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
 		5A0451F959D5E028E64491F7 /* AuthPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
@@ -222,6 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BCFFB72CFF338E00ED5AE2 /* CHIPageControl in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +390,7 @@
 			children = (
 				5521680D2CFCF9DF00869B10 /* BaseClasses */,
 				552168102CFCFA1000869B10 /* Protocols */,
+				55520BCC2CFF2CC5005506CE /* Factories */,
 				5521681B2CFCFE1C00869B10 /* Extensions */,
 			);
 			path = Library;
@@ -385,6 +410,7 @@
 			children = (
 				552168132CFCFAEC00869B10 /* Coordinator.swift */,
 				552168172CFCFB6700869B10 /* Presentable.swift */,
+				55BCFFC42CFFA5F900ED5AE2 /* Scrollable.swift */,
 				552168152CFCFB3D00869B10 /* Router.swift */,
 			);
 			path = Protocols;
@@ -394,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				5521681C2CFCFE3600869B10 /* UIApplication+ext.swift */,
+				55BCFFC12CFF481500ED5AE2 /* UIView+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -420,6 +447,7 @@
 				5560F24B2CFBA04100398037 /* App */,
 				465536E702B65FB55F963F94 /* Screens */,
 				5560F2172CFB692C00398037 /* Resources */,
+				55BCFFC62D0051CF00ED5AE2 /* Services */,
 				5521680C2CFCF96700869B10 /* Library */,
 				5560F2432CFB99AE00398037 /* SwiftGen */,
 			);
@@ -457,6 +485,15 @@
 				55520BC52CFF0F9D005506CE /* OnboardingPresenterModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		55520BCC2CFF2CC5005506CE /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				55520BCD2CFF2CDB005506CE /* PageControlFactory.swift */,
+				55BCFFB82CFF358B00ED5AE2 /* ButtonFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		5560F2172CFB692C00398037 /* Resources */ = {
@@ -526,6 +563,50 @@
 				55A0AA7A2CFBA8B1007593F7 /* AppCoordinator.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		55BCFFBA2CFF413B00ED5AE2 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				55BCFFC32CFF8E1F00ED5AE2 /* Cells */,
+				55BCFFBB2CFF414900ED5AE2 /* OnboardingAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		55BCFFC32CFF8E1F00ED5AE2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				55BCFFBD2CFF415400ED5AE2 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		55BCFFC62D0051CF00ED5AE2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				55BCFFCE2D00B30700ED5AE2 /* UserDefaults */,
+				55BCFFC92D00B1F500ED5AE2 /* Locator */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		55BCFFC92D00B1F500ED5AE2 /* Locator */ = {
+			isa = PBXGroup;
+			children = (
+				55BCFFCA2D00B20400ED5AE2 /* ServiceLocator.swift */,
+				55BCFFCC2D00B21100ED5AE2 /* ServiceLocating.swift */,
+			);
+			path = Locator;
+			sourceTree = "<group>";
+		};
+		55BCFFCE2D00B30700ED5AE2 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				55BCFFC72D0051E900ED5AE2 /* UserDefaultsService.swift */,
+				55BCFFCF2D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		6912A9C511A599775B068ADA /* Configurator */ = {
@@ -699,8 +780,10 @@
 		D54E92D733C90663C9FC2820 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55BCFFBA2CFF413B00ED5AE2 /* Adapter */,
 				760C7C2C5DE739ED90458D1D /* OnboardingViewController.swift */,
 				810B2645A1FA6139023D8BE4 /* OnboardingView.swift */,
+				55520BC72CFF239C005506CE /* OnboardingViewDelegate.swift */,
 				ED2D3CEDA0A77344DA85C8A8 /* OnboardingViewInput.swift */,
 				26C73B71322A05D347299DF1 /* OnboardingViewOutput.swift */,
 			);
@@ -771,6 +854,9 @@
 			dependencies = (
 			);
 			name = FoodDelivery;
+			packageProductDependencies = (
+				55BCFFB62CFF338E00ED5AE2 /* CHIPageControl */,
+			);
 			productName = FoodDelivery;
 			productReference = 554687C52CFB5C8B00FE724D /* FoodDelivery.app */;
 			productType = "com.apple.product-type.application";
@@ -802,6 +888,7 @@
 			mainGroup = 554687BC2CFB5C8B00FE724D;
 			packageReferences = (
 				5521681E2CFE1DAD00869B10 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				55BCFFB52CFF338E00ED5AE2 /* XCRemoteSwiftPackageReference "CHIPageControl" */,
 			);
 			productRefGroup = 554687C62CFB5C8B00FE724D /* Products */;
 			projectDirPath = "";
@@ -895,20 +982,25 @@
 				55A0AA7B2CFBA8B1007593F7 /* AppCoordinator.swift in Sources */,
 				5521681A2CFCFBD300869B10 /* MainRouter.swift in Sources */,
 				554687CB2CFB5C8B00FE724D /* SceneDelegate.swift in Sources */,
+				55BCFFCD2D00B21100ED5AE2 /* ServiceLocating.swift in Sources */,
 				552168142CFCFAEC00869B10 /* Coordinator.swift in Sources */,
 				552168182CFCFB6700869B10 /* Presentable.swift in Sources */,
 				68D9E951E42DFBD829DC2365 /* OnboardingCoordinator.swift in Sources */,
 				AF300DB627A937E397A1117D /* OnboardingCoordinatorOutput.swift in Sources */,
 				C6DBA03C181C0946A5DA4D44 /* OnboardingModuleConfigurator.swift in Sources */,
 				EB52E4F3C7AB9A11CEEDA01B /* OnboardingPresenter.swift in Sources */,
+				55BCFFD02D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift in Sources */,
+				55BCFFBC2CFF414900ED5AE2 /* OnboardingAdapter.swift in Sources */,
 				5BC9340947698775206658C2 /* OnboardingModuleInput.swift in Sources */,
 				8A8B5804BB78A9044B03CEB8 /* OnboardingModuleOutput.swift in Sources */,
+				55BCFFC52CFFA5F900ED5AE2 /* Scrollable.swift in Sources */,
 				07B454FDB5146312E084E26B /* OnboardingViewController.swift in Sources */,
 				98170F2FE036EB5C5CFE0819 /* OnboardingView.swift in Sources */,
 				BE87DDAB7D3EB1B699393B03 /* OnboardingViewInput.swift in Sources */,
 				17A6959F5539F56FACCC35C5 /* OnboardingViewOutput.swift in Sources */,
 				DE885D79A23FF0FF569D1BAF /* AuthCoordinator.swift in Sources */,
 				03A760DF710F30D8A64CFD8E /* AuthCoordinatorOutput.swift in Sources */,
+				55BCFFC22CFF481500ED5AE2 /* UIView+ext.swift in Sources */,
 				F498D98C330DECEA0421281F /* AuthModuleConfigurator.swift in Sources */,
 				B3438DE8C8DE29AC5F15CBD0 /* AuthPresenter.swift in Sources */,
 				E6959448A2F8A23F0B3ADA7A /* AuthModuleInput.swift in Sources */,
@@ -922,10 +1014,13 @@
 				35A9ED79167D45B8ADF40CA3 /* MainCoordinatorOutput.swift in Sources */,
 				55520BC62CFF0F9D005506CE /* OnboardingPresenterModel.swift in Sources */,
 				FFF4A922F3F68A85F54FA285 /* MainModuleConfigurator.swift in Sources */,
+				55520BCE2CFF2CDB005506CE /* PageControlFactory.swift in Sources */,
 				0F4D67FABD2E5BA894BEE858 /* MainPresenter.swift in Sources */,
 				4B9C9B45762F31915E3482DE /* MainModuleInput.swift in Sources */,
 				02B769F2E6583924A9B3A185 /* MainModuleOutput.swift in Sources */,
 				5B752F4ABF6C7113951790DD /* MainViewController.swift in Sources */,
+				55520BC82CFF239C005506CE /* OnboardingViewDelegate.swift in Sources */,
+				55BCFFBE2CFF415400ED5AE2 /* OnboardingCollectionViewCell.swift in Sources */,
 				FB91B9773C95E67457C4F1AB /* MainViewInput.swift in Sources */,
 				55520BBE2CFEF38D005506CE /* MainTab.swift in Sources */,
 				1A95F4EA699F97FF4AE2094A /* MainViewOutput.swift in Sources */,
@@ -936,6 +1031,7 @@
 				41F3B7A7661E42E7B6630F81 /* HomeModuleInput.swift in Sources */,
 				7A3E3C2B69FED3D5917BEC46 /* HomeModuleOutput.swift in Sources */,
 				29576498563F757A4A1EDF69 /* HomeViewController.swift in Sources */,
+				55BCFFCB2D00B20400ED5AE2 /* ServiceLocator.swift in Sources */,
 				F40FCA070A9D6857835B9D50 /* HomeView.swift in Sources */,
 				7BE7ECABAFAC13A83034EA1C /* HomeViewInput.swift in Sources */,
 				4806B65CE97A11BBB8BD8F2A /* HomeViewOutput.swift in Sources */,
@@ -944,6 +1040,7 @@
 				C5BB7D26F5698028D0A392E3 /* OrderModuleConfigurator.swift in Sources */,
 				B73D2C02D9C2A8FA2441865D /* OrderPresenter.swift in Sources */,
 				A76F8C0B2B74810D87CAD4B3 /* OrderModuleInput.swift in Sources */,
+				55BCFFC82D0051E900ED5AE2 /* UserDefaultsService.swift in Sources */,
 				1D12E4C825678556885B0902 /* OrderModuleOutput.swift in Sources */,
 				DDA56203BA4C44D265832EDF /* OrderViewController.swift in Sources */,
 				A832D4D37279EA2CD5EC9FAC /* OrderView.swift in Sources */,
@@ -954,6 +1051,7 @@
 				C442EDF7713B0CC8156ACFF3 /* ProfileModuleConfigurator.swift in Sources */,
 				229E7AE0465325410F4812A5 /* ProfilePresenter.swift in Sources */,
 				27EBF7560BCF2805AE6C7892 /* ProfileModuleInput.swift in Sources */,
+				55BCFFB92CFF358C00ED5AE2 /* ButtonFactory.swift in Sources */,
 				5143B40060D1C77D832B4B8C /* ProfileModuleOutput.swift in Sources */,
 				3BAE41039B8351A535A92BA7 /* ProfileViewController.swift in Sources */,
 				6EA546785E84BC9EECBD1AC0 /* ProfileView.swift in Sources */,
@@ -1200,7 +1298,23 @@
 				minimumVersion = 0.57.1;
 			};
 		};
+		55BCFFB52CFF338E00ED5AE2 /* XCRemoteSwiftPackageReference "CHIPageControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChiliLabs/CHIPageControl.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55BCFFB62CFF338E00ED5AE2 /* CHIPageControl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55BCFFB52CFF338E00ED5AE2 /* XCRemoteSwiftPackageReference "CHIPageControl" */;
+			productName = CHIPageControl;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 554687BD2CFB5C8B00FE724D /* Project object */;
 }
