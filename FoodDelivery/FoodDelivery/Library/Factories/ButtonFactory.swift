@@ -10,7 +10,7 @@ import UIKit
 enum ButtonFactory {
 
     enum ButtonType {
-        case basic, onboarding, accent, secondary
+        case basic, onboarding, accent, secondary, noBackground
 
         var config: UIButton.Configuration {
             var config = UIButton.Configuration.filled()
@@ -28,11 +28,14 @@ enum ButtonFactory {
                 config.baseBackgroundColor = .App.white
                 config.baseForegroundColor = .App.black
             case .accent:
-                config.baseBackgroundColor = .App.white
-                config.baseForegroundColor = .App.black
+                config.baseBackgroundColor = .App.accentOrange
+                config.baseForegroundColor = .App.white
             case .secondary:
-                config.baseBackgroundColor = .App.white
-                config.baseForegroundColor = .App.secondaryFill
+                config.baseBackgroundColor = .App.secondaryFill
+                config.baseForegroundColor = .App.black
+            case .noBackground:
+                config.baseBackgroundColor = .clear
+                config.baseBackgroundColor = .App.blueishGrey
             }
             return config
         }
