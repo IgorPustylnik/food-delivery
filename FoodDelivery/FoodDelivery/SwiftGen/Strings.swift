@@ -10,6 +10,76 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum Authpage {
+    internal enum Button {
+      /// Forgot password?
+      internal static let forgot = L10n.tr("Localizable", "Authpage.button.forgot", fallback: "Forgot password?")
+      /// Sign In
+      internal static let signin = L10n.tr("Localizable", "Authpage.button.signin", fallback: "Sign In")
+      /// Sign Up
+      internal static let signup = L10n.tr("Localizable", "Authpage.button.signup", fallback: "Sign Up")
+    }
+    internal enum Label {
+      /// Or connect with
+      internal static let connections = L10n.tr("Localizable", "Authpage.label.connections", fallback: "Or connect with")
+      /// Sign In
+      internal static let signin = L10n.tr("Localizable", "Authpage.label.signin", fallback: "Sign In")
+      /// Sign Up
+      internal static let signup = L10n.tr("Localizable", "Authpage.label.signup", fallback: "Sign Up")
+    }
+    internal enum Textfield {
+      internal enum Signin {
+        internal enum Password {
+          /// Password
+          internal static let placeholder = L10n.tr("Localizable", "Authpage.textfield.signin.password.placeholder", fallback: "Password")
+        }
+        internal enum Username {
+          /// Username
+          internal static let placeholder = L10n.tr("Localizable", "Authpage.textfield.signin.username.placeholder", fallback: "Username")
+        }
+      }
+      internal enum Signup {
+        internal enum Password {
+          /// Enter password
+          internal static let placeholder = L10n.tr("Localizable", "Authpage.textfield.signup.password.placeholder", fallback: "Enter password")
+        }
+        internal enum Reenterpassword {
+          /// Re-enter password
+          internal static let placeholder = L10n.tr("Localizable", "Authpage.textfield.signup.reenterpassword.placeholder", fallback: "Re-enter password")
+        }
+        internal enum Username {
+          /// Enter username
+          internal static let placeholder = L10n.tr("Localizable", "Authpage.textfield.signup.username.placeholder", fallback: "Enter username")
+        }
+      }
+    }
+  }
+  internal enum InvalidInput {
+    /// Invalid email address
+    internal static let email = L10n.tr("Localizable", "InvalidInput.email", fallback: "Invalid email address")
+    internal enum Password {
+      /// Password must contain at least one capital letter
+      internal static let capitalletter = L10n.tr("Localizable", "InvalidInput.password.capitalletter", fallback: "Password must contain at least one capital letter")
+      /// Password mustn't be longer than 50 characters
+      internal static let long = L10n.tr("Localizable", "InvalidInput.password.long", fallback: "Password mustn't be longer than 50 characters")
+      /// Password mustn't contain non-latin letters
+      internal static let nonlatin = L10n.tr("Localizable", "InvalidInput.password.nonlatin", fallback: "Password mustn't contain non-latin letters")
+      /// Password must contain at least one number
+      internal static let nonumbers = L10n.tr("Localizable", "InvalidInput.password.nonumbers", fallback: "Password must contain at least one number")
+      /// Password must be at least 8 characters long
+      internal static let short = L10n.tr("Localizable", "InvalidInput.password.short", fallback: "Password must be at least 8 characters long")
+    }
+    internal enum Reenterpassword {
+      /// Passwords must match
+      internal static let doesnotmatch = L10n.tr("Localizable", "InvalidInput.reenterpassword.doesnotmatch", fallback: "Passwords must match")
+    }
+    internal enum Username {
+      /// Username mustn't be longer than 50 characters
+      internal static let long = L10n.tr("Localizable", "InvalidInput.username.long", fallback: "Username mustn't be longer than 50 characters")
+      /// Username must be at least 2 characters long
+      internal static let short = L10n.tr("Localizable", "InvalidInput.username.short", fallback: "Username must be at least 2 characters long")
+    }
+  }
   internal enum Onboarding {
     internal enum Button {
       /// Great!

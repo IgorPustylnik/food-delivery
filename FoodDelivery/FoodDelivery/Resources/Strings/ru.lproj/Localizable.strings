@@ -16,15 +16,49 @@
 // Buttons
 "Onboarding.button.next"="Далее";
 "Onboarding.button.last"="Круто!";
+
 // Page 1
 "Onboarding.page1.title"="Вкуснейшая еда";
 "Onboarding.page1.description"="Лорем ипсум долор сит амет, консецтетуэр адиписцинг элит.";
+
 // Page 2
 "Onboarding.page2.title"="Быстрая доставка";
 "Onboarding.page2.description"="Лорем ипсум долор сит амет, консецтетуэр адиписцинг элит.";
+
 // Page 3
 "Onboarding.page3.title"="Высшее качество";
 "Onboarding.page3.description"="Лорем ипсум долор сит амет, консецтетуэр адиписцинг элит.";
+
 // Page 4
 "Onboarding.page4.title"="Оплата онлайн";
 "Onboarding.page4.description"="Лорем ипсум долор сит амет, консецтетуэр адиписцинг элит.";
+
+// MARK: - Authpage
+// Labels
+"Auth.label.signin"="Войти";
+"Auth.label.signup"="Зарегистрироваться";
+"Auth.label.connections"="Или войдите с помощью";
+
+// Buttons
+"Auth.button.signin"="Войти";
+"Auth.button.signup"="Зарегистрироваться";
+"Auth.button.forgot"="Забыли пароль?";
+
+// TextField placeholders
+"Auth.textfield.signin.placeholder.username"="Имя пользователя";
+"Auth.textfield.signin.placeholder.password"="Пароль";
+"Auth.textfield.signup.placeholder.username"="Введите имя пользователя";
+
+"Auth.textfield.signup.placeholder.password"="Введите пароль";
+"Auth.textfield.signup.placeholder.reenterpassword"="Повторите пароль";
+
+// Input validation errors
+"InvalidInput.signup.username.short"="Имя должно быть не короче 2 символов";
+"InvalidInput.signup.username.long"="Имя не может быть длиннее 50 симолов";
+"InvalidInput.email"="Некорректный адрес email";
+"InvalidInput.signup.password.short"="Пароль должен быть не короче 8 символов";
+"InvalidInput.signup.password.long"="Пароль не должен быть длиннее 50 символов";
+"InvalidInput.signup.password.nonlatin"="Пароль не должен содержать нелатинские символы";
+"InvalidInput.signup.password.capitalletter"="Пароль должен содержать как минимум одну заглавную букву";
+"InvalidInput.signup.password.nonumbers"="Пароль должен содержать как минимум одну цифру";
+"InvalidInput.signup.reenterpassword.doesnotmatch"="Пароли не совпадают";

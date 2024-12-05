@@ -16,15 +16,49 @@
 // Buttons
 "Onboarding.button.next"="Next";
 "Onboarding.button.last"="Great!";
+
 // Page 1
 "Onboarding.page1.title"="Delicious Food";
 "Onboarding.page1.description"="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
 // Page 2
 "Onboarding.page2.title"="Fast Shipping";
 "Onboarding.page2.description"="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
 // Page 3
 "Onboarding.page3.title"="Highest Quality";
 "Onboarding.page3.description"="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
 // Page 4
 "Onboarding.page4.title"="Pay Online";
 "Onboarding.page4.description"="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+// MARK: - Authpage
+// Labels
+"Authpage.label.signin"="Sign In";
+"Authpage.label.signup"="Sign Up";
+"Authpage.label.connections"="Or connect with";
+
+// Buttons
+"Authpage.button.signin"="Sign In";
+"Authpage.button.signup"="Sign Up";
+"Authpage.button.forgot"="Forgot password?";
+
+// TextField placeholders
+"Authpage.textfield.signin.username.placeholder"="Username";
+"Authpage.textfield.signin.password.placeholder"="Password";
+"Authpage.textfield.signup.username.placeholder"="Enter username";
+
+"Authpage.textfield.signup.password.placeholder"="Enter password";
+"Authpage.textfield.signup.reenterpassword.placeholder"="Re-enter password";
+
+// Input alidation errors
+"InvalidInput.username.short"="Username must be at least 2 characters long";
+"InvalidInput.username.long"="Username mustn't be longer than 50 characters";
+"InvalidInput.email"="Invalid email address";
+"InvalidInput.password.short"="Password must be at least 8 characters long";
+"InvalidInput.password.long"="Password mustn't be longer than 50 characters";
+"InvalidInput.password.nonlatin"="Password mustn't contain non-latin letters";
+"InvalidInput.password.capitalletter"="Password must contain at least one capital letter";
+"InvalidInput.password.nonumbers"="Password must contain at least one number";
+"InvalidInput.reenterpassword.doesnotmatch"="Passwords must match";
