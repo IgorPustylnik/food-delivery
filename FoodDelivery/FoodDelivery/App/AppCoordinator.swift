@@ -39,7 +39,7 @@ final class AppCoordinator: BaseCoordinator {
 
     private var instructor: LaunchInstructor {
         if let hasCompletedOnboarding = userDefaultsService?.hasCompletedOnboarding, hasCompletedOnboarding {
-            return .configure(userState: .loggedIn)
+            return .configure(userState: .notAuthorized)
         }
         return .configure(userState: .notPassedOnboarding)
     }

@@ -25,8 +25,7 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
     }
 
     override func start() {
-        let (view, _) = AuthModuleConfigurator().configure()
-        router.setRootModule(view)
+        showMainScreen()
     }
 
 }
@@ -34,5 +33,10 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
 // MARK: - Private methods
 
 private extension AuthCoordinator {
+
+    func showMainScreen() {
+        let (view, _) = AuthModuleConfigurator().configure()
+        router.setRootModule(view)
+    }
 
 }
