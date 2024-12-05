@@ -7,4 +7,8 @@
 //
 
 protocol AuthModuleOutput: AnyObject {
+
+    var showSignInScreenClosure: (() -> Void)? { get set }
+    var showSignUpScreenClosure: (() -> Void)? { get set }
+
 }

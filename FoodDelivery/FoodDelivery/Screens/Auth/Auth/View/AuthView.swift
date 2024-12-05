@@ -10,6 +10,13 @@ import UIKit
 
 final class AuthView: UIView {
 
+    // MARK: - ViewController interaction closures
+
+    var signInButtonPressedClosure: (() -> Void)?
+    var signUpButtonPressedClosure: (() -> Void)?
+    var facebookButtonPressedClosure: (() -> Void)?
+    var googlePlusButtonPressedClosure: (() -> Void)?
+
     // MARK: - UI Elements
 
     private lazy var imageContainerView: UIView = {
@@ -102,22 +109,22 @@ private extension AuthView {
 
     @objc
     func signInButtonPressed() {
-
+        signInButtonPressedClosure?()
     }
 
     @objc
     func signUpButtonPressed() {
-
+        signUpButtonPressedClosure?()
     }
 
     @objc
     func facebookButtonPressed() {
-        print("facebook")
+        facebookButtonPressedClosure?()
     }
 
     @objc
     func googlePlusButtonPressed() {
-        print("googleplus")
+        googlePlusButtonPressedClosure?()
     }
 
 }

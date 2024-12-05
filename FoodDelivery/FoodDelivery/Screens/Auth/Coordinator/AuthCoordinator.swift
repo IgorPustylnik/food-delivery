@@ -35,8 +35,21 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
 private extension AuthCoordinator {
 
     func showMainScreen() {
-        let (view, _) = AuthModuleConfigurator().configure()
-        router.setRootModule(view)
+        let (view, output) = AuthModuleConfigurator().configure()
+        output.showSignInScreenClosure = showSignInScreen
+        output.showSignUpScreenClosure = showSignUpScreen
+        let navigationController = UINavigationController(rootViewController: view)
+        router.setRootModule(navigationController)
+    }
+
+    func showSignInScreen() {
+        let (view, _) = SignInModuleConfigurator().configure()
+        router.push(view)
+    }
+
+    func showSignUpScreen() {
+        let (view, _) = SignUpModuleConfigurator().configure()
+        router.push(view)
     }
 
 }

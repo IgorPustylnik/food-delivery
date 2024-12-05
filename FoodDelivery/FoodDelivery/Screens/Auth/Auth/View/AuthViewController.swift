@@ -21,6 +21,8 @@ final class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         output?.viewLoaded()
+        authView.signInButtonPressedClosure = output?.showSignInScreen
+        authView.signUpButtonPressedClosure = output?.showSignUpScreen
     }
 
     override func loadView() {

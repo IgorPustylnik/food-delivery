@@ -10,11 +10,14 @@
 		02B769F2E6583924A9B3A185 /* MainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9DCD148FC99ADD8B1B380C /* MainModuleOutput.swift */; };
 		03A760DF710F30D8A64CFD8E /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652CE686435D85A7584840C0 /* AuthCoordinatorOutput.swift */; };
 		07B454FDB5146312E084E26B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C7C2C5DE739ED90458D1D /* OnboardingViewController.swift */; };
+		0E3E460BA0E65166AA452313 /* SignUpViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119C951A6D8F117BEBB2613 /* SignUpViewOutput.swift */; };
 		0F4D67FABD2E5BA894BEE858 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031B74FB2076B1AF00C4115 /* MainPresenter.swift */; };
 		126039D51DD0EE80D7BA8562 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A05D542C4D1456B7074609 /* AuthView.swift */; };
+		159D96468903D124CBCDF5D6 /* SignUpModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CD613BF831860C576707C1 /* SignUpModuleInput.swift */; };
 		17A6959F5539F56FACCC35C5 /* OnboardingViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C73B71322A05D347299DF1 /* OnboardingViewOutput.swift */; };
 		1A95F4EA699F97FF4AE2094A /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2828F5BCCD7AD35DAB3DDC /* MainViewOutput.swift */; };
 		1D12E4C825678556885B0902 /* OrderModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC138D2CF0066DCD050F7BC /* OrderModuleOutput.swift */; };
+		1DAA783A08F58AE2A16AE12E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D9FBF790BC56E01ED25CD /* SignInViewController.swift */; };
 		229E7AE0465325410F4812A5 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DA7DDE90583D002C885D6 /* ProfilePresenter.swift */; };
 		22CABD2F2FF7375A5F93F784 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F9DA2C3BB72A7FB88FF8AE /* HomePresenter.swift */; };
 		27EBF7560BCF2805AE6C7892 /* ProfileModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093263FA4A60960AB72B6B3D /* ProfileModuleInput.swift */; };
@@ -24,9 +27,13 @@
 		306D107932B01FBE4902AD42 /* FavoritesViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3206B919EB0232DB6D9A79 /* FavoritesViewInput.swift */; };
 		35A9ED79167D45B8ADF40CA3 /* MainCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518DC68BE3848AC4AE9F0D7A /* MainCoordinatorOutput.swift */; };
 		3780D00E90DD6441630E83DA /* OrderCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E23E22141B9BEAC63E73B /* OrderCoordinatorOutput.swift */; };
+		3930ED3A29FDA4009E6F060E /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FFC0DE570F4EB0435279B7 /* SignUpPresenter.swift */; };
 		3BAE41039B8351A535A92BA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D1A28F41E57BBB74BFFD2 /* ProfileViewController.swift */; };
+		40D0CED9FCAAE589CF2CDCAC /* SignUpModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D28DDC968A6661A4B7DC62 /* SignUpModuleOutput.swift */; };
+		417B7AAA926E41A0D2C7739D /* SignUpModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7C0B6B6F5B2B856F80BB /* SignUpModuleConfigurator.swift */; };
 		41F3B7A7661E42E7B6630F81 /* HomeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89E9A5DE70C8923A889D84 /* HomeModuleInput.swift */; };
 		41F78590CCD778837D12349B /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C2B072B64BD6B812DABC5 /* FavoritesPresenter.swift */; };
+		44CE94D6AC63128E904AE852 /* SignInModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA80D0A9AE953BB1184639F /* SignInModuleConfigurator.swift */; };
 		477587FD0E5134F275243D5B /* ProfileViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19887E327642ABF3C3F29A84 /* ProfileViewInput.swift */; };
 		4806B65CE97A11BBB8BD8F2A /* HomeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FC39855EC87E95748A6E6 /* HomeViewOutput.swift */; };
 		4B9C9B45762F31915E3482DE /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5A8B0BB37B58A54318FAA /* MainModuleInput.swift */; };
@@ -75,20 +82,28 @@
 		55BCFFCB2D00B20400ED5AE2 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFCA2D00B20400ED5AE2 /* ServiceLocator.swift */; };
 		55BCFFCD2D00B21100ED5AE2 /* ServiceLocating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFCC2D00B21100ED5AE2 /* ServiceLocating.swift */; };
 		55BCFFD02D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFCF2D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift */; };
+		55C62CC52D019E5300672B0E /* AuthBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C62CC42D019E5300672B0E /* AuthBottomView.swift */; };
+		55C62CC72D01AE4C00672B0E /* FFTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C62CC62D01AE4C00672B0E /* FFTextFieldView.swift */; };
+		55C62CCA2D01C9D900672B0E /* TextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C62CC92D01C9D900672B0E /* TextValidator.swift */; };
 		5B752F4ABF6C7113951790DD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13E85C376BDB60637B5401 /* MainViewController.swift */; };
 		5BC9340947698775206658C2 /* OnboardingModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5116B67F7487D43236A85C /* OnboardingModuleInput.swift */; };
 		68D9E951E42DFBD829DC2365 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62DC5F3C879526573747AC /* OnboardingCoordinator.swift */; };
 		6C3C40C5046FC0CFECD610AA /* FavoritesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386D396A240392A4A421879 /* FavoritesModuleConfigurator.swift */; };
 		6EA546785E84BC9EECBD1AC0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0562ECB97AB81CDD7FF0D2E8 /* ProfileView.swift */; };
+		71657BE9D2F6A3ADBE3D37B0 /* SignInViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824DB467C0C771DCF3AB108 /* SignInViewOutput.swift */; };
+		778817A38E2454F2DA307814 /* SignUpViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2A5B0D75B924E24EB2603E /* SignUpViewInput.swift */; };
 		7920FF267122B5D89EF11BA5 /* OrderViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E675F8BE39EBEF2F93DD0FB /* OrderViewOutput.swift */; };
 		7A3E3C2B69FED3D5917BEC46 /* HomeModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65633C70D5D368EB68B8FCFA /* HomeModuleOutput.swift */; };
 		7BE7ECABAFAC13A83034EA1C /* HomeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5382E9D2EF614740D3116D9 /* HomeViewInput.swift */; };
+		7E852CA0B7E82BED9AFBA85C /* SignInModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47551FE31F55D71E9EE410 /* SignInModuleInput.swift */; };
 		81AA1C0A0CA769C04FAE5082 /* HomeModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68360E6361C452F2D36163E4 /* HomeModuleConfigurator.swift */; };
 		8263AD40D322AA75F6020539 /* OrderViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE3523401125B24DF16AD00 /* OrderViewInput.swift */; };
 		83EF45127DF4815D85D6D762 /* FavoritesCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBC3F8ACC0E3DD01CE739A /* FavoritesCoordinatorOutput.swift */; };
 		8957934533B9EC40C0B391CF /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD1D19701B78D9F821BF74 /* ProfileCoordinator.swift */; };
 		8A8B5804BB78A9044B03CEB8 /* OnboardingModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35437397CF534EF51C03E437 /* OnboardingModuleOutput.swift */; };
+		913502C064805A0257765E41 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E5102B634C1920E1BC237 /* SignUpView.swift */; };
 		98170F2FE036EB5C5CFE0819 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B2645A1FA6139023D8BE4 /* OnboardingView.swift */; };
+		98DBBCD94124E5E0297B8075 /* SignInViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9706C0F83A6591FEF20CCFCE /* SignInViewInput.swift */; };
 		997947B31987188887808A3D /* HomeCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C430C2E57A0FB11F135AD408 /* HomeCoordinatorOutput.swift */; };
 		9CF4AE04F4A4BAB77B68F129 /* FavoritesViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02BA59B31E14919E63949E6 /* FavoritesViewOutput.swift */; };
 		A2591CBBBEF06604F4110F6A /* AuthModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FEDA4D395D19772BD909B9 /* AuthModuleOutput.swift */; };
@@ -98,6 +113,7 @@
 		A832D4D37279EA2CD5EC9FAC /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99377F58E3DE74B885E34B /* OrderView.swift */; };
 		A85390284A5BFF86A1BC3929 /* ProfileViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9462145A449C352C10902440 /* ProfileViewOutput.swift */; };
 		A8B6CA728CFF280E683C1E0D /* FavoritesModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4720D28BBD25E2AB75CB186 /* FavoritesModuleOutput.swift */; };
+		A999862A8A5DA63FA228F575 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877241ADD35B05484D5A0230 /* SignInView.swift */; };
 		AF300DB627A937E397A1117D /* OnboardingCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929F8D38B92D5D4E603C269 /* OnboardingCoordinatorOutput.swift */; };
 		B0402117AC830CD82051DCDC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B324FE5B93044989C7D622E /* HomeCoordinator.swift */; };
 		B3438DE8C8DE29AC5F15CBD0 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0451F959D5E028E64491F7 /* AuthPresenter.swift */; };
@@ -108,12 +124,15 @@
 		C442EDF7713B0CC8156ACFF3 /* ProfileModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B288E6D6CBBFCEEB113A54F /* ProfileModuleConfigurator.swift */; };
 		C5BB7D26F5698028D0A392E3 /* OrderModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5FF60439234735EA8D2A7E /* OrderModuleConfigurator.swift */; };
 		C6DBA03C181C0946A5DA4D44 /* OnboardingModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BA1FA6DF62E19DFCFC93CD /* OnboardingModuleConfigurator.swift */; };
+		D0A24514A5D41412D19F1FA0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F05AAF5949AF1B88D9391D /* SignUpViewController.swift */; };
 		D60A3FFADDD5E702B12381CC /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52EF996717AE98BD218DBBE /* MainCoordinator.swift */; };
+		D7E3B7EA88735F73D971F731 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CEF62A038E09855BEB0553 /* SignInPresenter.swift */; };
 		DDA56203BA4C44D265832EDF /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCE618FF2EB63E505BBAAF /* OrderViewController.swift */; };
 		DE885D79A23FF0FF569D1BAF /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E4D1D3C6D4790BD35987E /* AuthCoordinator.swift */; };
 		E514AF4CF339A02E869E4CF5 /* ProfileCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E515DF66DD3949E81D9FC1B /* ProfileCoordinatorOutput.swift */; };
 		E6959448A2F8A23F0B3ADA7A /* AuthModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87D5678036F80929DAF5FF /* AuthModuleInput.swift */; };
 		E9846D4D871917AE04C9986F /* FavoritesModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1E2EC7CA71F7F330AEF4B /* FavoritesModuleInput.swift */; };
+		EA1F3184FF73B248623BA1A5 /* SignInModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E8F1885431ED81C613F8FC /* SignInModuleOutput.swift */; };
 		EA711AC3B552CB84CC51B01E /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A139FE310605265E657994A /* OrderCoordinator.swift */; };
 		EB52E4F3C7AB9A11CEEDA01B /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5BB8E8425FA01F0A1C04D /* OnboardingPresenter.swift */; };
 		F40FCA070A9D6857835B9D50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE1097123501F8F1A9B696 /* HomeView.swift */; };
@@ -123,6 +142,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01E8F1885431ED81C613F8FC /* SignInModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInModuleOutput.swift; sourceTree = "<group>"; };
 		0386D396A240392A4A421879 /* FavoritesModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesModuleConfigurator.swift; sourceTree = "<group>"; };
 		0562ECB97AB81CDD7FF0D2E8 /* ProfileView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		093263FA4A60960AB72B6B3D /* ProfileModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileModuleInput.swift; sourceTree = "<group>"; };
@@ -132,7 +152,9 @@
 		0BFBC3F8ACC0E3DD01CE739A /* FavoritesCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorOutput.swift; sourceTree = "<group>"; };
 		0E8436FBC74F7E02349CEDC2 /* AuthModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleConfigurator.swift; sourceTree = "<group>"; };
 		0E99377F58E3DE74B885E34B /* OrderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		0EA80D0A9AE953BB1184639F /* SignInModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInModuleConfigurator.swift; sourceTree = "<group>"; };
 		11E77F4F788260604AE1C8CF /* MainModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleConfigurator.swift; sourceTree = "<group>"; };
+		12FFC0DE570F4EB0435279B7 /* SignUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		14B1E2EC7CA71F7F330AEF4B /* FavoritesModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesModuleInput.swift; sourceTree = "<group>"; };
 		19887E327642ABF3C3F29A84 /* ProfileViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewInput.swift; sourceTree = "<group>"; };
 		1A5116B67F7487D43236A85C /* OnboardingModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingModuleInput.swift; sourceTree = "<group>"; };
@@ -142,10 +164,12 @@
 		26C73B71322A05D347299DF1 /* OnboardingViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewOutput.swift; sourceTree = "<group>"; };
 		2A89E9A5DE70C8923A889D84 /* HomeModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeModuleInput.swift; sourceTree = "<group>"; };
 		2B324FE5B93044989C7D622E /* HomeCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		2B9E5102B634C1920E1BC237 /* SignUpView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		35437397CF534EF51C03E437 /* OnboardingModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingModuleOutput.swift; sourceTree = "<group>"; };
 		440016A6D4675DA3F9E78E3B /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
 		45BCE618FF2EB63E505BBAAF /* OrderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		4B87D5678036F80929DAF5FF /* AuthModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleInput.swift; sourceTree = "<group>"; };
+		4F47551FE31F55D71E9EE410 /* SignInModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInModuleInput.swift; sourceTree = "<group>"; };
 		518DC68BE3848AC4AE9F0D7A /* MainCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinatorOutput.swift; sourceTree = "<group>"; };
 		552168132CFCFAEC00869B10 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		552168152CFCFB3D00869B10 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -194,6 +218,9 @@
 		55BCFFCA2D00B20400ED5AE2 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		55BCFFCC2D00B21100ED5AE2 /* ServiceLocating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocating.swift; sourceTree = "<group>"; };
 		55BCFFCF2D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceImpl.swift; sourceTree = "<group>"; };
+		55C62CC42D019E5300672B0E /* AuthBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBottomView.swift; sourceTree = "<group>"; };
+		55C62CC62D01AE4C00672B0E /* FFTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTextFieldView.swift; sourceTree = "<group>"; };
+		55C62CC92D01C9D900672B0E /* TextValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValidator.swift; sourceTree = "<group>"; };
 		57B5BB8E8425FA01F0A1C04D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		588FC39855EC87E95748A6E6 /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
 		5A0451F959D5E028E64491F7 /* AuthPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
@@ -208,27 +235,36 @@
 		69A44EBEDD82ECDDB417AB66 /* OrderModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderModuleInput.swift; sourceTree = "<group>"; };
 		6BC138D2CF0066DCD050F7BC /* OrderModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderModuleOutput.swift; sourceTree = "<group>"; };
 		6E675F8BE39EBEF2F93DD0FB /* OrderViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderViewOutput.swift; sourceTree = "<group>"; };
+		70CEF62A038E09855BEB0553 /* SignInPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		72A5A8B0BB37B58A54318FAA /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
 		760C7C2C5DE739ED90458D1D /* OnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		810B2645A1FA6139023D8BE4 /* OnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		872F7C0B6B6F5B2B856F80BB /* SignUpModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignUpModuleConfigurator.swift; sourceTree = "<group>"; };
+		877241ADD35B05484D5A0230 /* SignInView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		89FEDA4D395D19772BD909B9 /* AuthModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleOutput.swift; sourceTree = "<group>"; };
 		8B62DC5F3C879526573747AC /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		8E13E85C376BDB60637B5401 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9462145A449C352C10902440 /* ProfileViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewOutput.swift; sourceTree = "<group>"; };
 		95A05D542C4D1456B7074609 /* AuthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		95B9C03F89976C6B430E1F6C /* FavoritesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		9706C0F83A6591FEF20CCFCE /* SignInViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInViewInput.swift; sourceTree = "<group>"; };
 		97F9DA2C3BB72A7FB88FF8AE /* HomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		9A139FE310605265E657994A /* OrderCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
 		9A7E4D1D3C6D4790BD35987E /* AuthCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		9E515DF66DD3949E81D9FC1B /* ProfileCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorOutput.swift; sourceTree = "<group>"; };
+		9F2A5B0D75B924E24EB2603E /* SignUpViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignUpViewInput.swift; sourceTree = "<group>"; };
 		A02BA59B31E14919E63949E6 /* FavoritesViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesViewOutput.swift; sourceTree = "<group>"; };
 		A031B74FB2076B1AF00C4115 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		A119C951A6D8F117BEBB2613 /* SignUpViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignUpViewOutput.swift; sourceTree = "<group>"; };
 		A65D1A28F41E57BBB74BFFD2 /* ProfileViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B824DB467C0C771DCF3AB108 /* SignInViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInViewOutput.swift; sourceTree = "<group>"; };
 		BA3206B919EB0232DB6D9A79 /* FavoritesViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesViewInput.swift; sourceTree = "<group>"; };
 		BA5FF60439234735EA8D2A7E /* OrderModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderModuleConfigurator.swift; sourceTree = "<group>"; };
 		BAE3523401125B24DF16AD00 /* OrderViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderViewInput.swift; sourceTree = "<group>"; };
 		C430C2E57A0FB11F135AD408 /* HomeCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorOutput.swift; sourceTree = "<group>"; };
 		CF7C2B072B64BD6B812DABC5 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		D1CD613BF831860C576707C1 /* SignUpModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignUpModuleInput.swift; sourceTree = "<group>"; };
+		D3F05AAF5949AF1B88D9391D /* SignUpViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DABCC90FBD83AF5335673151 /* AuthViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewOutput.swift; sourceTree = "<group>"; };
 		E019D48C78DFF53417F99000 /* AuthViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewInput.swift; sourceTree = "<group>"; };
 		E44DA7DDE90583D002C885D6 /* ProfilePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
@@ -236,8 +272,10 @@
 		E52EF996717AE98BD218DBBE /* MainCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		E5382E9D2EF614740D3116D9 /* HomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewInput.swift; sourceTree = "<group>"; };
 		E929F8D38B92D5D4E603C269 /* OnboardingCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorOutput.swift; sourceTree = "<group>"; };
+		EA5D9FBF790BC56E01ED25CD /* SignInViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		ED2D3CEDA0A77344DA85C8A8 /* OnboardingViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewInput.swift; sourceTree = "<group>"; };
 		F2A46221954AFC771D3FF9D7 /* ProfileModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileModuleOutput.swift; sourceTree = "<group>"; };
+		F2D28DDC968A6661A4B7DC62 /* SignUpModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignUpModuleOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,9 +335,9 @@
 			isa = PBXGroup;
 			children = (
 				F6498262E2DD5780F9B20D58 /* Coordinator */,
-				296E8E5539DBC094665EB582 /* Configurator */,
-				76DB7990144D6720DD44D9DB /* Presenter */,
-				2A7C8B1F1A01088E0609EF2F /* View */,
+				55C62CBF2D0198EB00672B0E /* Auth */,
+				904B97186318209F27589938 /* SignIn */,
+				BD5DBB38FB0A997079F3CF72 /* SignUp */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -324,6 +362,7 @@
 		2A7C8B1F1A01088E0609EF2F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55C62CC32D019E2C00672B0E /* Components */,
 				5CAA1DBBD8C0E28C21ABB423 /* AuthViewController.swift */,
 				95A05D542C4D1456B7074609 /* AuthView.swift */,
 				E019D48C78DFF53417F99000 /* AuthViewInput.swift */,
@@ -388,9 +427,11 @@
 		5521680C2CFCF96700869B10 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				55C62CC82D01B05700672B0E /* ReusableLayers */,
 				5521680D2CFCF9DF00869B10 /* BaseClasses */,
 				552168102CFCFA1000869B10 /* Protocols */,
 				55520BCC2CFF2CC5005506CE /* Factories */,
+				55C62CCD2D01D3DB00672B0E /* Utilities */,
 				5521681B2CFCFE1C00869B10 /* Extensions */,
 			);
 			path = Library;
@@ -609,6 +650,40 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		55C62CBF2D0198EB00672B0E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				296E8E5539DBC094665EB582 /* Configurator */,
+				76DB7990144D6720DD44D9DB /* Presenter */,
+				2A7C8B1F1A01088E0609EF2F /* View */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		55C62CC32D019E2C00672B0E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				55C62CC42D019E5300672B0E /* AuthBottomView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		55C62CC82D01B05700672B0E /* ReusableLayers */ = {
+			isa = PBXGroup;
+			children = (
+				55C62CC62D01AE4C00672B0E /* FFTextFieldView.swift */,
+			);
+			path = ReusableLayers;
+			sourceTree = "<group>";
+		};
+		55C62CCD2D01D3DB00672B0E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				55C62CC92D01C9D900672B0E /* TextValidator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		6912A9C511A599775B068ADA /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,6 +731,24 @@
 				518DC68BE3848AC4AE9F0D7A /* MainCoordinatorOutput.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8558A2F339C42E2AE4CCDE61 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0EA80D0A9AE953BB1184639F /* SignInModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		904B97186318209F27589938 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				8558A2F339C42E2AE4CCDE61 /* Configurator */,
+				C39C1E012B54D518DD5CDBA0 /* Presenter */,
+				B9154B529348FDC131F2E422 /* View */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		90DA4F8C78B8FDFA11B3A7DD /* Presenter */ = {
@@ -748,6 +841,38 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		B9154B529348FDC131F2E422 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D9FBF790BC56E01ED25CD /* SignInViewController.swift */,
+				877241ADD35B05484D5A0230 /* SignInView.swift */,
+				9706C0F83A6591FEF20CCFCE /* SignInViewInput.swift */,
+				B824DB467C0C771DCF3AB108 /* SignInViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD5DBB38FB0A997079F3CF72 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CE76F5F6B3D7FC0A4D216398 /* Configurator */,
+				EC4E7F7E69F6D0829CBB6140 /* Presenter */,
+				BE83E3BB25261B162D47E5C6 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BE83E3BB25261B162D47E5C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3F05AAF5949AF1B88D9391D /* SignUpViewController.swift */,
+				2B9E5102B634C1920E1BC237 /* SignUpView.swift */,
+				9F2A5B0D75B924E24EB2603E /* SignUpViewInput.swift */,
+				A119C951A6D8F117BEBB2613 /* SignUpViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C10C61715CC33E8B48CDACD6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +882,16 @@
 				7727F938E9534A2D2F7B271E /* View */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		C39C1E012B54D518DD5CDBA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				70CEF62A038E09855BEB0553 /* SignInPresenter.swift */,
+				4F47551FE31F55D71E9EE410 /* SignInModuleInput.swift */,
+				01E8F1885431ED81C613F8FC /* SignInModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		C838CA6F4A3D3E8F0B5B0B23 /* Configurator */ = {
@@ -775,6 +910,14 @@
 				F2A46221954AFC771D3FF9D7 /* ProfileModuleOutput.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE76F5F6B3D7FC0A4D216398 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				872F7C0B6B6F5B2B856F80BB /* SignUpModuleConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		D54E92D733C90663C9FC2820 /* View */ = {
@@ -807,6 +950,16 @@
 				62BA1FA6DF62E19DFCFC93CD /* OnboardingModuleConfigurator.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		EC4E7F7E69F6D0829CBB6140 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				12FFC0DE570F4EB0435279B7 /* SignUpPresenter.swift */,
+				D1CD613BF831860C576707C1 /* SignUpModuleInput.swift */,
+				F2D28DDC968A6661A4B7DC62 /* SignUpModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		EF1CF4862685DB28FDFE1B6B /* View */ = {
@@ -873,6 +1026,7 @@
 				TargetAttributes = {
 					554687C42CFB5C8B00FE724D = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -978,6 +1132,7 @@
 				55A0AA752CFBA5FE007593F7 /* BaseCoordinator.swift in Sources */,
 				5560F2462CFB9B3D00398037 /* Fonts.swift in Sources */,
 				5521681D2CFCFE3600869B10 /* UIApplication+ext.swift in Sources */,
+				55C62CCA2D01C9D900672B0E /* TextValidator.swift in Sources */,
 				552168162CFCFB3D00869B10 /* Router.swift in Sources */,
 				55A0AA7B2CFBA8B1007593F7 /* AppCoordinator.swift in Sources */,
 				5521681A2CFCFBD300869B10 /* MainRouter.swift in Sources */,
@@ -985,6 +1140,7 @@
 				55BCFFCD2D00B21100ED5AE2 /* ServiceLocating.swift in Sources */,
 				552168142CFCFAEC00869B10 /* Coordinator.swift in Sources */,
 				552168182CFCFB6700869B10 /* Presentable.swift in Sources */,
+				55C62CC52D019E5300672B0E /* AuthBottomView.swift in Sources */,
 				68D9E951E42DFBD829DC2365 /* OnboardingCoordinator.swift in Sources */,
 				AF300DB627A937E397A1117D /* OnboardingCoordinatorOutput.swift in Sources */,
 				C6DBA03C181C0946A5DA4D44 /* OnboardingModuleConfigurator.swift in Sources */,
@@ -1067,6 +1223,23 @@
 				2AB634AF07B9644136DC84EB /* FavoritesView.swift in Sources */,
 				306D107932B01FBE4902AD42 /* FavoritesViewInput.swift in Sources */,
 				9CF4AE04F4A4BAB77B68F129 /* FavoritesViewOutput.swift in Sources */,
+				44CE94D6AC63128E904AE852 /* SignInModuleConfigurator.swift in Sources */,
+				D7E3B7EA88735F73D971F731 /* SignInPresenter.swift in Sources */,
+				7E852CA0B7E82BED9AFBA85C /* SignInModuleInput.swift in Sources */,
+				55C62CC72D01AE4C00672B0E /* FFTextFieldView.swift in Sources */,
+				EA1F3184FF73B248623BA1A5 /* SignInModuleOutput.swift in Sources */,
+				1DAA783A08F58AE2A16AE12E /* SignInViewController.swift in Sources */,
+				A999862A8A5DA63FA228F575 /* SignInView.swift in Sources */,
+				98DBBCD94124E5E0297B8075 /* SignInViewInput.swift in Sources */,
+				71657BE9D2F6A3ADBE3D37B0 /* SignInViewOutput.swift in Sources */,
+				417B7AAA926E41A0D2C7739D /* SignUpModuleConfigurator.swift in Sources */,
+				3930ED3A29FDA4009E6F060E /* SignUpPresenter.swift in Sources */,
+				159D96468903D124CBCDF5D6 /* SignUpModuleInput.swift in Sources */,
+				40D0CED9FCAAE589CF2CDCAC /* SignUpModuleOutput.swift in Sources */,
+				D0A24514A5D41412D19F1FA0 /* SignUpViewController.swift in Sources */,
+				913502C064805A0257765E41 /* SignUpView.swift in Sources */,
+				778817A38E2454F2DA307814 /* SignUpViewInput.swift in Sources */,
+				0E3E460BA0E65166AA452313 /* SignUpViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1217,6 +1390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 483R2RBHL2;
@@ -1234,6 +1408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.igorpustylnik.FoodDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1244,6 +1419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 483R2RBHL2;

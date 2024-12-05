@@ -1,17 +1,12 @@
 //
-//  AuthViewOutput.swift
+//  SignInViewOutput.swift
 //  FoodDelivery
 //
-//  Created by igorpustylnik on 02/12/2024.
+//  Created by igorpustylnik on 05/12/2024.
 //  Copyright © 2024 Igor Pustylnik. All rights reserved.
 //
 
-protocol AuthViewOutput {
+protocol SignInViewOutput {
     /// Notify presenter that view is ready
     func viewLoaded()
-
-    func showSignInScreen()
-
-    func showSignUpScreen()
-
 }

@@ -11,15 +11,15 @@ import UIKit
 final class AuthModuleConfigurator {
 
     func configure() -> (
-       AuthViewController,
-       AuthModuleOutput) {
-        let view = AuthViewController()
-        let presenter = AuthPresenter()
+        AuthViewController,
+        AuthModuleOutput) {
+            let view = AuthViewController()
+            let presenter = AuthPresenter()
 
-        presenter.view = view
-        view.output = presenter
+            presenter.view = view
+            view.output = presenter
 
-        return (view, presenter)
-    }
+            return (view, presenter)
+        }
 
 }

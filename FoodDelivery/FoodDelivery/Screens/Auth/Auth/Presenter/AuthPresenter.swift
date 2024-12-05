@@ -10,6 +10,9 @@ final class AuthPresenter: AuthModuleOutput {
 
     // MARK: - AuthModuleOutput
 
+    var showSignInScreenClosure: (() -> Void)?
+    var showSignUpScreenClosure: (() -> Void)?
+
     // MARK: - Properties
 
     weak var view: AuthViewInput?
@@ -27,6 +30,14 @@ extension AuthPresenter: AuthViewOutput {
 
     func viewLoaded() {
         view?.setupInitialState()
+    }
+
+    func showSignInScreen() {
+        showSignInScreenClosure?()
+    }
+
+    func showSignUpScreen() {
+        showSignUpScreenClosure?()
     }
 
 }
