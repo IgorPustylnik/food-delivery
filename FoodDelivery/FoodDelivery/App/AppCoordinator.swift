@@ -73,7 +73,7 @@ private extension AppCoordinator {
     func runOnboardingFlow() {
         let router = MainRouter()
         let coordinator = OnboardingCoordinator(router: router)
-        coordinator.onComplete = { [weak self] in
+        coordinator.onComplete = { [weak self, weak coordinator] in
             self?.userDefaultsService?.hasCompletedOnboarding = true
             self?.start()
             self?.removeDependency(coordinator)
@@ -85,7 +85,7 @@ private extension AppCoordinator {
     func runAuthFlow() {
         let router = MainRouter()
         let coordinator = AuthCoordinator(router: router)
-        coordinator.finishFlow = { [weak self] in
+        coordinator.finishFlow = { [weak self, weak coordinator] in
             self?.start()
             self?.removeDependency(coordinator)
         }
@@ -96,7 +96,7 @@ private extension AppCoordinator {
     func runMainFlow() {
         let router = MainRouter()
         let coordinator = MainCoordinator(router: router)
-        coordinator.onLogout = { [weak self] in
+        coordinator.onLogout = { [weak self, weak coordinator] in
             self?.start()
             self?.removeDependency(coordinator)
         }
