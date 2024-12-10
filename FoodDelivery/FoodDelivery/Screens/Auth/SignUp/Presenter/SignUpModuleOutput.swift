@@ -7,4 +7,6 @@
 //
 
 protocol SignUpModuleOutput: AnyObject {
+    var successfulSignUpClosure: (() -> Void)? { get set }
+    var forgotPasswordClosure: (() -> Void)? { get set }
 }

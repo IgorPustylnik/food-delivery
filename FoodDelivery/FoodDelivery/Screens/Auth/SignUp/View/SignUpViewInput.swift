@@ -9,4 +9,5 @@
 protocol SignUpViewInput: AnyObject {
     /// Method for setup initial state of view
     func setupInitialState()
+    func setUsernameError(_ error: String)
 }

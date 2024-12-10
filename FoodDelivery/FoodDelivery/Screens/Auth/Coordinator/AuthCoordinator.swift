@@ -43,13 +43,28 @@ private extension AuthCoordinator {
     }
 
     func showSignInScreen() {
-        let (view, _) = SignInModuleConfigurator().configure()
+        let (view, output) = SignInModuleConfigurator().configure()
+        output.forgotPasswordClosure = showForgotPasswordScreen
+        output.successfulSignInClosure = finishFlow
         router.push(view)
     }
 
     func showSignUpScreen() {
-        let (view, _) = SignUpModuleConfigurator().configure()
+        let (view, output) = SignUpModuleConfigurator().configure()
+        output.forgotPasswordClosure = showForgotPasswordScreen
+        output.successfulSignUpClosure = finishFlow
         router.push(view)
+    }
+
+    func showForgotPasswordScreen() {
+        let alert = UIAlertController(title: "Feature not implemented",
+                                      message: "You can't do that yet",
+                                      preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok",
+                                   style: .default)
+
+        alert.addAction(action)
+        router.present(alert, animated: true) { }
     }
 
 }

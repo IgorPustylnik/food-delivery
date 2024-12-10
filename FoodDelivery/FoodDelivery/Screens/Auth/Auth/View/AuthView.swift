@@ -68,10 +68,15 @@ final class AuthView: UIView {
 
         burgerImageView.anchorCenter(to: imageContainerView)
 
+        let topOffset: CGFloat = UIScreen.main.bounds.height > 800 ? 60 : 0
         imageContainerView.anchor(top: safeAreaLayoutGuide.topAnchor,
                                   leading: leadingAnchor,
                                   trailing: trailingAnchor,
-                                  padding: UIEdgeInsets(top: 60, left: 60, bottom: 0, right: 60))
+                                  padding: UIEdgeInsets(top: topOffset,
+                                                        left: 60,
+                                                        bottom: 0,
+                                                        right: 60))
+
         imageContainerView.heightAnchor.constraint(equalTo: imageContainerView.widthAnchor).isActive = true
 
         signInButton.anchor(top: imageContainerView.bottomAnchor,
@@ -86,11 +91,12 @@ final class AuthView: UIView {
                             padding: UIEdgeInsets(top: 20, left: 30, bottom: 0, right: 30))
         signUpButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
 
+        let bottomOffset: CGFloat = UIScreen.main.bounds.height > 800 ? -151 : -121
         bottomView.anchor(top: bottomAnchor,
                           leading: leadingAnchor,
                           bottom: bottomAnchor,
                           trailing: trailingAnchor,
-                          padding: UIEdgeInsets(top: -151, left: 0, bottom: 0, right: 0)
+                          padding: UIEdgeInsets(top: bottomOffset, left: 0, bottom: 0, right: 0)
         )
     }
 

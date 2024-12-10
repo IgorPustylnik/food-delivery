@@ -9,4 +9,6 @@
 protocol SignInViewInput: AnyObject {
     /// Method for setup initial state of view
     func setupInitialState()
+    func setUsernameError(_ error: String)
+    func setPasswordError(_ error: String)
 }

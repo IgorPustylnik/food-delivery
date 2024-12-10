@@ -20,6 +20,8 @@ final class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        signupView.signUpButtonClosure = output?.signUp
+        signupView.forgotPasswordButtonClosure = output?.forgotPassword
         output?.viewLoaded()
     }
 
@@ -34,6 +36,10 @@ extension SignUpViewController: SignUpViewInput {
 
     func setupInitialState() {
 
+    }
+
+    func setUsernameError(_ error: String) {
+        signupView.setUsernameError(error)
     }
 
 }

@@ -83,7 +83,7 @@
 		55BCFFCD2D00B21100ED5AE2 /* ServiceLocating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFCC2D00B21100ED5AE2 /* ServiceLocating.swift */; };
 		55BCFFD02D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFFCF2D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift */; };
 		55C62CC52D019E5300672B0E /* AuthBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C62CC42D019E5300672B0E /* AuthBottomView.swift */; };
-		55C62CC72D01AE4C00672B0E /* FFTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C62CC62D01AE4C00672B0E /* FFTextFieldView.swift */; };
+		55C62CC72D01AE4C00672B0E /* FDTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C62CC62D01AE4C00672B0E /* FDTextFieldView.swift */; };
 		55C62CCA2D01C9D900672B0E /* TextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C62CC92D01C9D900672B0E /* TextValidator.swift */; };
 		5B752F4ABF6C7113951790DD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13E85C376BDB60637B5401 /* MainViewController.swift */; };
 		5BC9340947698775206658C2 /* OnboardingModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5116B67F7487D43236A85C /* OnboardingModuleInput.swift */; };
@@ -219,7 +219,7 @@
 		55BCFFCC2D00B21100ED5AE2 /* ServiceLocating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocating.swift; sourceTree = "<group>"; };
 		55BCFFCF2D00D0F900ED5AE2 /* UserDefaultsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiceImpl.swift; sourceTree = "<group>"; };
 		55C62CC42D019E5300672B0E /* AuthBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBottomView.swift; sourceTree = "<group>"; };
-		55C62CC62D01AE4C00672B0E /* FFTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTextFieldView.swift; sourceTree = "<group>"; };
+		55C62CC62D01AE4C00672B0E /* FDTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDTextFieldView.swift; sourceTree = "<group>"; };
 		55C62CC92D01C9D900672B0E /* TextValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValidator.swift; sourceTree = "<group>"; };
 		57B5BB8E8425FA01F0A1C04D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		588FC39855EC87E95748A6E6 /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
@@ -338,6 +338,7 @@
 				55C62CBF2D0198EB00672B0E /* Auth */,
 				904B97186318209F27589938 /* SignIn */,
 				BD5DBB38FB0A997079F3CF72 /* SignUp */,
+				55C62CC32D019E2C00672B0E /* ReusableLayers */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -362,7 +363,6 @@
 		2A7C8B1F1A01088E0609EF2F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				55C62CC32D019E2C00672B0E /* Components */,
 				5CAA1DBBD8C0E28C21ABB423 /* AuthViewController.swift */,
 				95A05D542C4D1456B7074609 /* AuthView.swift */,
 				E019D48C78DFF53417F99000 /* AuthViewInput.swift */,
@@ -660,18 +660,18 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		55C62CC32D019E2C00672B0E /* Components */ = {
+		55C62CC32D019E2C00672B0E /* ReusableLayers */ = {
 			isa = PBXGroup;
 			children = (
 				55C62CC42D019E5300672B0E /* AuthBottomView.swift */,
 			);
-			path = Components;
+			path = ReusableLayers;
 			sourceTree = "<group>";
 		};
 		55C62CC82D01B05700672B0E /* ReusableLayers */ = {
 			isa = PBXGroup;
 			children = (
-				55C62CC62D01AE4C00672B0E /* FFTextFieldView.swift */,
+				55C62CC62D01AE4C00672B0E /* FDTextFieldView.swift */,
 			);
 			path = ReusableLayers;
 			sourceTree = "<group>";
@@ -1226,7 +1226,7 @@
 				44CE94D6AC63128E904AE852 /* SignInModuleConfigurator.swift in Sources */,
 				D7E3B7EA88735F73D971F731 /* SignInPresenter.swift in Sources */,
 				7E852CA0B7E82BED9AFBA85C /* SignInModuleInput.swift in Sources */,
-				55C62CC72D01AE4C00672B0E /* FFTextFieldView.swift in Sources */,
+				55C62CC72D01AE4C00672B0E /* FDTextFieldView.swift in Sources */,
 				EA1F3184FF73B248623BA1A5 /* SignInModuleOutput.swift in Sources */,
 				1DAA783A08F58AE2A16AE12E /* SignInViewController.swift in Sources */,
 				A999862A8A5DA63FA228F575 /* SignInView.swift in Sources */,

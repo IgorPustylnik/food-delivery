@@ -82,6 +82,8 @@ final class AuthBottomView: UIView {
             addSubview($0)
         }
 
+        clipsToBounds = true
+
         connectionsLabel.anchor(top: topAnchor,
                                 trailing: trailingAnchor,
                                 padding: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 30))

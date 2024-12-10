@@ -9,4 +9,6 @@
 protocol SignUpViewOutput {
     /// Notify presenter that view is ready
     func viewLoaded()
+    func signUp(_ username: String, _ password: String)
+    func forgotPassword()
 }

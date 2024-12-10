@@ -10,6 +10,9 @@ final class SignInPresenter: SignInModuleOutput {
 
     // MARK: - SignInModuleOutput
 
+    var successfulSignInClosure: (() -> Void)?
+    var forgotPasswordClosure: (() -> Void)?
+
     // MARK: - Properties
 
     weak var view: SignInViewInput?
@@ -27,6 +30,18 @@ extension SignInPresenter: SignInViewOutput {
 
     func viewLoaded() {
         view?.setupInitialState()
+    }
+
+    func signIn(_ username: String, _ password: String) {
+        if username == "admin" {
+            successfulSignInClosure?()
+            return
+        }
+        view?.setPasswordError("Wrong password")
+    }
+
+    func forgotPassword() {
+        forgotPasswordClosure?()
     }
 
 }

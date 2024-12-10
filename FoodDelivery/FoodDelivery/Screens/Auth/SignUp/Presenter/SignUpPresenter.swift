@@ -10,6 +10,9 @@ final class SignUpPresenter: SignUpModuleOutput {
 
     // MARK: - SignUpModuleOutput
 
+    var successfulSignUpClosure: (() -> Void)?
+    var forgotPasswordClosure: (() -> Void)?
+
     // MARK: - Properties
 
     weak var view: SignUpViewInput?
@@ -27,6 +30,18 @@ extension SignUpPresenter: SignUpViewOutput {
 
     func viewLoaded() {
         view?.setupInitialState()
+    }
+
+    func signUp(_ username: String, _ password: String) {
+        if username == "user" {
+            successfulSignUpClosure?()
+            return
+        }
+        view?.setUsernameError("This username is not allowed")
+    }
+
+    func forgotPassword() {
+        forgotPasswordClosure?()
     }
 
 }

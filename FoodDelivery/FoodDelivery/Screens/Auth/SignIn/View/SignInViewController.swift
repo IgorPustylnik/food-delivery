@@ -21,6 +21,8 @@ final class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         output?.viewLoaded()
+        signinView.signInButtonClosure = output?.signIn
+        signinView.forgotPasswordButtonClosure = output?.forgotPassword
     }
 
     override func loadView() {
@@ -34,6 +36,14 @@ extension SignInViewController: SignInViewInput {
 
     func setupInitialState() {
 
+    }
+
+    func setUsernameError(_ error: String) {
+        signinView.setUsernameError(error)
+    }
+
+    func setPasswordError(_ error: String) {
+        signinView.setPasswordError(error)
     }
 
 }
