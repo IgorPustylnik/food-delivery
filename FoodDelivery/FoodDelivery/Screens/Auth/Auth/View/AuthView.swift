@@ -68,11 +68,10 @@ final class AuthView: UIView {
 
         burgerImageView.anchorCenter(to: imageContainerView)
 
-        let topOffset: CGFloat = UIScreen.main.bounds.height > 800 ? 60 : 0
         imageContainerView.anchor(top: safeAreaLayoutGuide.topAnchor,
                                   leading: leadingAnchor,
                                   trailing: trailingAnchor,
-                                  padding: UIEdgeInsets(top: topOffset,
+                                  padding: UIEdgeInsets(top: 0,
                                                         left: 60,
                                                         bottom: 0,
                                                         right: 60))
