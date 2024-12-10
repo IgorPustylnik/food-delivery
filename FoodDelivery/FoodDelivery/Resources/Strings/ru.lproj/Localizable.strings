@@ -35,30 +35,31 @@
 
 // MARK: - Authpage
 // Labels
-"Auth.label.signin"="Войти";
-"Auth.label.signup"="Зарегистрироваться";
-"Auth.label.connections"="Или войдите с помощью";
+"Authpage.label.signin"="Войти";
+"Authpage.label.signup"="Зарегистрироваться";
+"Authpage.label.connections"="Или войдите с помощью";
 
 // Buttons
-"Auth.button.signin"="Войти";
-"Auth.button.signup"="Зарегистрироваться";
-"Auth.button.forgot"="Забыли пароль?";
+"Authpage.button.signin"="Войти";
+"Authpage.button.signup"="Зарегистрироваться";
+"Authpage.button.forgot"="Забыли пароль?";
 
 // TextField placeholders
-"Auth.textfield.signin.placeholder.username"="Имя пользователя";
-"Auth.textfield.signin.placeholder.password"="Пароль";
-"Auth.textfield.signup.placeholder.username"="Введите имя пользователя";
+"Authpage.textfield.signin.username.placeholder"="Имя пользователя";
+"Authpage.textfield.signin.password.placeholder"="Пароль";
+"Authpage.textfield.signup.username.placeholder"="Введите имя пользователя";
 
-"Auth.textfield.signup.placeholder.password"="Введите пароль";
-"Auth.textfield.signup.placeholder.reenterpassword"="Повторите пароль";
+"Authpage.textfield.signup.password.placeholder"="Введите пароль";
+"Authpage.textfield.signup.reenterpassword.placeholder"="Повторите пароль";
 
 // Input validation errors
-"InvalidInput.signup.username.short"="Имя должно быть не короче 2 символов";
-"InvalidInput.signup.username.long"="Имя не может быть длиннее 50 симолов";
+"InvalidInput.required.empty"="Обязательное поле";
+"InvalidInput.username.short"="Имя должно быть не короче 2 символов";
+"InvalidInput.username.long"="Имя не может быть длиннее 50 симолов";
 "InvalidInput.email"="Некорректный адрес email";
-"InvalidInput.signup.password.short"="Пароль должен быть не короче 8 символов";
-"InvalidInput.signup.password.long"="Пароль не должен быть длиннее 50 символов";
-"InvalidInput.signup.password.nonlatin"="Пароль не должен содержать нелатинские символы";
-"InvalidInput.signup.password.capitalletter"="Пароль должен содержать как минимум одну заглавную букву";
-"InvalidInput.signup.password.nonumbers"="Пароль должен содержать как минимум одну цифру";
-"InvalidInput.signup.reenterpassword.doesnotmatch"="Пароли не совпадают";
+"InvalidInput.password.short"="Пароль должен быть не короче 8 символов";
+"InvalidInput.password.long"="Пароль не должен быть длиннее 50 символов";
+"InvalidInput.password.nonlatin"="Пароль не должен содержать нелатинские символы";
+"InvalidInput.password.capitalletter"="Пароль должен содержать как минимум одну заглавную букву";
+"InvalidInput.password.nonumbers"="Пароль должен содержать как минимум одну цифру";
+"InvalidInput.password.mismatch"="Пароли не совпадают";

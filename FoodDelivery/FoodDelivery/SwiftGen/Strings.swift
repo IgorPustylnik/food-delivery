@@ -62,6 +62,8 @@ internal enum L10n {
       internal static let capitalletter = L10n.tr("Localizable", "InvalidInput.password.capitalletter", fallback: "Password must contain at least one capital letter")
       /// Password mustn't be longer than 50 characters
       internal static let long = L10n.tr("Localizable", "InvalidInput.password.long", fallback: "Password mustn't be longer than 50 characters")
+      /// Passwords must match
+      internal static let mismatch = L10n.tr("Localizable", "InvalidInput.password.mismatch", fallback: "Passwords must match")
       /// Password mustn't contain non-latin letters
       internal static let nonlatin = L10n.tr("Localizable", "InvalidInput.password.nonlatin", fallback: "Password mustn't contain non-latin letters")
       /// Password must contain at least one number
@@ -69,9 +71,9 @@ internal enum L10n {
       /// Password must be at least 8 characters long
       internal static let short = L10n.tr("Localizable", "InvalidInput.password.short", fallback: "Password must be at least 8 characters long")
     }
-    internal enum Reenterpassword {
-      /// Passwords must match
-      internal static let doesnotmatch = L10n.tr("Localizable", "InvalidInput.reenterpassword.doesnotmatch", fallback: "Passwords must match")
+    internal enum Required {
+      /// This field is required
+      internal static let empty = L10n.tr("Localizable", "InvalidInput.required.empty", fallback: "This field is required")
     }
     internal enum Username {
       /// Username mustn't be longer than 50 characters
