@@ -25,9 +25,7 @@ final class OnboardingCoordinator: BaseCoordinator, OnboardingCoordinatorOutput 
     }
 
     override func start() {
-        let (view, output) = OnboardingModuleConfigurator().configure()
-        output.onComplete = onComplete
-        router.setRootModule(view)
+        showOnboardingModule()
     }
 
 }
@@ -35,5 +33,13 @@ final class OnboardingCoordinator: BaseCoordinator, OnboardingCoordinatorOutput 
 // MARK: - Private methods
 
 private extension OnboardingCoordinator {
+
+    func showOnboardingModule() {
+        let (view, output) = OnboardingModuleConfigurator().configure()
+        output.onComplete = { [weak self] in
+            self?.onComplete?()
+        }
+        router.setRootModule(view)
+    }
 
 }

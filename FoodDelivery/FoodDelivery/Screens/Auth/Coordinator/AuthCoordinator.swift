@@ -25,7 +25,7 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
     }
 
     override func start() {
-        showMainScreen()
+        showMainModule()
     }
 
 }
@@ -34,29 +34,29 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
 
 private extension AuthCoordinator {
 
-    func showMainScreen() {
+    func showMainModule() {
         let (view, output) = AuthModuleConfigurator().configure()
-        output.showSignInScreenClosure = showSignInScreen
-        output.showSignUpScreenClosure = showSignUpScreen
+        output.showSignInScreenClosure = showSignInModule
+        output.showSignUpScreenClosure = showSignUpModule
         let navigationController = UINavigationController(rootViewController: view)
         router.setRootModule(navigationController)
     }
 
-    func showSignInScreen() {
+    func showSignInModule() {
         let (view, output) = SignInModuleConfigurator().configure()
-        output.forgotPasswordClosure = showForgotPasswordScreen
+        output.forgotPasswordClosure = showForgotPasswordModule
         output.successfulSignInClosure = finishFlow
         router.push(view)
     }
 
-    func showSignUpScreen() {
+    func showSignUpModule() {
         let (view, output) = SignUpModuleConfigurator().configure()
-        output.forgotPasswordClosure = showForgotPasswordScreen
+        output.forgotPasswordClosure = showForgotPasswordModule
         output.successfulSignUpClosure = finishFlow
         router.push(view)
     }
 
-    func showForgotPasswordScreen() {
+    func showForgotPasswordModule() {
         let alert = UIAlertController(title: "Feature not implemented",
                                       message: "You can't do that yet",
                                       preferredStyle: .alert)
