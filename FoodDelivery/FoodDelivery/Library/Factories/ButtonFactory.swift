@@ -15,10 +15,19 @@ enum ButtonFactory {
         var config: UIButton.Configuration {
             var config = UIButton.Configuration.filled()
             config.cornerStyle = .capsule
-            config.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
-                var outgoing = incoming
-                outgoing.font = FontFamily.Roboto.bold.font(size: 18)
-                return outgoing
+            switch self {
+            case .noBackground:
+                config.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
+                    var outgoing = incoming
+                    outgoing.font = FontFamily.Roboto.regular.font(size: 14)
+                    return outgoing
+                }
+            default:
+                config.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
+                    var outgoing = incoming
+                    outgoing.font = FontFamily.Roboto.bold.font(size: 18)
+                    return outgoing
+                }
             }
             switch self {
             case .basic:
@@ -35,7 +44,7 @@ enum ButtonFactory {
                 config.baseForegroundColor = .App.black
             case .noBackground:
                 config.baseBackgroundColor = .clear
-                config.baseBackgroundColor = .App.blueishGrey
+                config.baseForegroundColor = .App.blueishGrey
             }
             return config
         }
