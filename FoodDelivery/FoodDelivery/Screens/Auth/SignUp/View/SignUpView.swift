@@ -32,6 +32,7 @@ final class SignUpView: UIView {
     private lazy var signUpLabel: UILabel = {
         $0.font = FontFamily.Roboto.bold.font(size: 24)
         $0.text = L10n.Authpage.Label.signup
+        $0.textColor = .App.black
         return $0
     }(UILabel())
 

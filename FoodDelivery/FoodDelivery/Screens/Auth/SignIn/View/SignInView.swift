@@ -31,6 +31,7 @@ final class SignInView: UIView {
     private lazy var signInLabel: UILabel = {
         $0.font = FontFamily.Roboto.bold.font(size: 24)
         $0.text = L10n.Authpage.Label.signin
+        $0.textColor = .App.black
         return $0
     }(UILabel())
 
